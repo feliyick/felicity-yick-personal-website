@@ -1,0 +1,203 @@
+.ProceduralTerrarium {
+    font-family: 'inter', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.terrarium-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.intro-row {
+    padding: 2em;
+}
+
+.terrarium-left-col {
+    text-align: center;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    column-gap: 1em;
+}
+
+a.git-link {
+    background-image: url('../../images/github-circle.png');
+    height: 30px;
+    width: 30px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
+.project-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+.responsible-for {
+    font-size: 14px;
+    color:var(--DARKGREY);
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 1em;
+    
+}
+.terrarium-right-col {
+    margin-top: 2em;
+    font-size: 14px;
+}
+
+.image-container {
+    margin-top: 1em;
+    display: flex;           /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the images */
+    align-items: center;     /* Align images vertically */
+    gap: 20px;              /* Optional: Add space between images */
+}
+
+.side-image {
+    max-width: 50%;       /* Make images responsive */
+    height: auto;          /* Maintain aspect ratio */
+}
+
+
+.terrarium-video-background {
+    background-image: url('../../images/dotted-wave.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.terrarium-video-one, .terrarium-video-two, .terrarium-video-three, .terrarium-presentation-video {
+    position: relative;
+    min-height: 300px;
+    max-width: 900px;
+    // max-height: 1000px;
+    // max-width: 1080px;
+    padding-top: 20%;
+    margin: auto;
+    margin-top: 20px; /* Adds space above the video */
+    margin-bottom: 20px; /* Optional: Adds space below the video */
+}
+
+.terrarium-video-one iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.terrarium-video-two iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+  }
+
+.terrarium-video-three iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.terrarium-presentation-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.terrarium-details {
+    margin:auto;
+    max-width: 900px;
+    margin-top: 1em;
+}
+
+.terrarium-features {
+    padding: 2em;
+    text-align: left;
+}
+.terrarium-features-title {
+    font-size: 24px;
+    border-left: var(--MUSTARD) 0.5em solid;
+    padding-left: 1em;
+    font-weight: bold;
+}
+
+.terrarium-feature-list {
+    margin-left: 1em;
+}
+
+
+
+@media only screen and (min-width: 720px) {
+
+    .terrarium-content {
+        display: flex;
+        flex-direction: column;
+        // max-width: 800px;
+        margin: auto;
+        padding: 3em;
+    }
+    
+    .intro-row {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        margin: auto;
+        column-gap: 0.3em
+    }
+    .terrarium-left-col {
+        width: 50%;
+    }
+    
+    .project-name {
+        font-size: 24px;
+        text-align: left;
+    
+    }
+
+    .project-image {
+        display: block;
+        margin-top: 15px; /* Space between the link and the image */
+        width: 100%; /* Adjust width as needed */
+        max-width: 100%; /* Optional: limits image size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .responsible-for {
+        text-align: left;   
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+    }
+    .terrarium-right-col {
+        width: 50%;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+   
+}

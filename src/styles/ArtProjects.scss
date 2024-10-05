@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.arts-container {
+    z-index: 0;
+    padding: 2em;
+    position: relative;
+    margin: auto;
+    background-image: url('../images/black-wave.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.arts-project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+@media only screen and (min-width: 800px) {
+    .arts-project-cards {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        // flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        column-gap: 1em;
+        row-gap: 1em;
+
+    }
+    // .arts-container {
+    //     /* Set rules to fill background */
+    //     min-height: 100%;
+    //     min-width: 2560px;
+	
+    //     /* Set up proportionate scaling */
+    //     width: 100%;
+    //     height: auto;
+    // }
+
+}

@@ -1,0 +1,187 @@
+.Treble {
+    font-family: 'inter', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.treble-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.intro-row {
+    padding: 2em;
+}
+
+.treble-left-col {
+    text-align: center;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.treble-top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1em;
+}
+
+.project-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+a.treble-git-link {
+    background-image: url('../../images/github-circle.png');
+    height: 30px;
+    width: 30px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.responsible-for {
+    font-size: 14px;
+    color:var(--DARKGREY);
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 1em;
+    
+}
+.treble-right-col {
+    margin-top: 2em;
+    font-size: 14px;
+}
+
+.treble-background {
+    background-image: url('../../images/dotted-wave.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1em;
+
+}
+// .treble-video {
+//     width: 100%    !important;
+//     height: auto   !important;
+//     max-width: 800px;
+//     margin: auto;
+//     display: block;
+// }
+
+.treble-video {
+    width: 100%;
+    height: 250px;
+}
+
+.treble-demo-video {
+    width: 100%;
+    height: 100%;
+    // border: 1px solid red;
+    overflow: auto;
+}
+
+
+.treble-details {
+    margin:auto;
+    max-width: 900px;
+    margin-top: 1em;
+}
+
+.treble-figma, .treble-paper {
+    padding: 2em;
+    text-align: left;
+    position: relative;
+}
+.treble-figma-title, .treble-paper-title {
+    font-size: 24px;
+    border-left: var(--MUSTARD) 0.5em solid;
+    padding-left: 1em;
+    margin-bottom: 1em;
+}
+
+
+// style="border: 1px solid rgba(0, 0, 0, 0.1);"
+
+.treble-figma-details {
+    width: 100%;
+    height: 250px;
+}
+
+.treble-figma-design {
+    width: 100%;
+    height: 100%;
+    // border: 1px solid red;
+    overflow: auto;
+}
+
+
+@media only screen and (min-width: 720px) {
+
+    .treble-content {
+        display: flex;
+        flex-direction: column;
+        // max-width: 800px;
+        margin: auto;
+        padding: 3em;
+    }
+
+    .treble-top-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 1em;
+    }
+    
+    .intro-row {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        margin: auto;
+        column-gap: 0.3em
+    }
+    .treble-left-col {
+        width: 50%;
+    }
+    
+    .project-name {
+        font-size: 24px;
+        text-align: left;
+    
+    }
+
+    .responsible-for {
+        text-align: left;   
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+    }
+    .treble-right-col {
+        width: 50%;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .treble-video {
+        max-width: 800px;
+        height: 450px;
+        margin: auto;
+    }
+    
+    .treble-figma-design {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .treble-figma, .treble-paper {
+        height: 550px;
+    }
+}

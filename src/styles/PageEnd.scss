@@ -1,0 +1,63 @@
+
+.Page-End {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    padding: 5em;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h3 {
+    font-size: 12px;
+    padding: 4em;
+    color: var(--MUSTARD);
+}
+a.linkedin {
+    background-image: url('../images/LinkedinLogo.png');
+    width: 4vh;
+    height: 4vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: cell;
+    color: rgba(0, 0, 0, 0);
+}
+
+a.github {
+    background-image: url('../images/GithubLogo.png');
+    width: 4vh;
+    height: 4vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: cell;
+    color: rgba(0, 0, 0, 0);
+}
+
+a.email-link {
+    background-image: url('../images/EnvelopeSimple.png');
+    width: 4vh;
+    height: 4vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: cell;
+    color: rgba(0, 0, 0, 0);
+}
+
+a.resume {
+    background-image: url('../images/File.png');
+    width: 4vh;
+    height: 4vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+   cursor: cell;
+    color: rgba(0, 0, 0, 0);
+}
+
+a:hover {
+    background-color: var(--MUSTARD);
+    cursor: cell;
+}

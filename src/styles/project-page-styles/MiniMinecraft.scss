@@ -1,0 +1,222 @@
+.MiniMinecraft {
+    font-family: 'inter', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.minecraft-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.intro-row {
+    padding: 2em;
+}
+
+.minecraft-left-col {
+    text-align: center;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.project-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    column-gap: 1em;
+}
+
+a.git-link {
+    background-image: url('../../images/github-circle.png');
+    height: 30px;
+    width: 30px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.responsible-for {
+    font-size: 14px;
+    color:var(--DARKGREY);
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 1em;
+    
+}
+.minecraft-right-col {
+    margin-top: 2em;
+    font-size: 14px;
+}
+
+.minecraft-background {
+    background-image: url('../../images/dotted-wave.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.minecraft-video {
+    position: relative;
+    min-height: 200px;
+    max-width: 900px;
+    // max-height: 1000px;
+    // max-width: 1080px;
+    padding-top: 20%;
+    margin: auto;
+}
+
+.minecraft-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.minecraft-details {
+    margin:auto;
+    max-width: 900px;
+    margin-top: 1em;
+}
+
+.procedural-terrain {
+    padding: 2em;
+    text-align: left;
+}
+.procedural-title {
+    font-size: 24px;
+    border-left: var(--MUSTARD) 0.5em solid;
+    padding-left: 1em;
+}
+
+
+.animation-textures {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    text-align: left;
+}
+.animtext-title {
+    font-size: 24px;
+    border-left: var(--MUSTARD) 0.5em solid;
+    padding-left: 1em;
+}
+
+.animtext-details, .procedural-details {
+    margin-top: 2em;
+}
+
+.animtext-image {
+    background-image: url('../../images/MiniMinecraft/minecraft_textures_all.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width:300px;
+    min-height: 300px;
+    margin-top: 2em;
+
+}
+
+.terrain-gifs{
+    margin: auto;
+    margin-top: 1em;
+    height:400px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-row: 50% 50%;
+}
+
+#terrain-one {
+    background-image: url('../../images/MiniMinecraft/Minecraft-Desert.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    justify-content: center;
+}
+#terrain-two {
+    background-image: url('../../images/MiniMinecraft/Minecraft-Grass.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#terrain-three {
+    background-image: url('../../images/MiniMinecraft/Minecraft-Slime.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#terrain-four {
+    background-image: url('../../images/MiniMinecraft/Minecraft-Ice.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 720px) {
+
+    .minecraft-content {
+        display: flex;
+        flex-direction: column;
+        // max-width: 800px;
+        margin: auto;
+        padding: 3em;
+    }
+    
+    .intro-row {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        margin: auto;
+        column-gap: 0.3em
+    }
+    .minecraft-left-col {
+        width: 50%;
+    }
+    
+    .project-name {
+        font-size: 24px;
+        text-align: left;
+    
+    }
+
+    .responsible-for {
+        text-align: left;   
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+    }
+    .minecraft-right-col {
+        width: 50%;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .animation-textures {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    .animtext-details{
+        margin-right: 1em;
+        // width: 60%;
+    }  
+    .animtext-image {
+        width: 40%;
+        background-size: contain;
+        margin: auto;
+    }
+}

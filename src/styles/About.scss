@@ -1,0 +1,80 @@
+.About {
+    // background-color: var(--BLACK);
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.info {
+    .info-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .about-me {
+            width: 70%;
+            border-left: var(--MUSTARD) 0.5em solid;
+
+        }
+        a.resume-button {
+            text-decoration: none;
+            width: 30%;
+            border-bottom: var(--MUSTARD) 1em solid;
+            font-weight: bold;
+            color: var(--BLACK);
+        }
+        
+        a.resume-button:hover {
+            background-color: var(--MUSTARD);
+            cursor: cell;
+        }
+    }
+    .about-me{
+        font-size:24px;
+        font-weight: bold;
+        padding-left: 1em;
+    }
+    .about-desc{
+        padding-top: 3em;
+        font-size: 16px;
+        margin-top: 1em;
+        overflow-wrap: break-word;
+        color: var(--BLACK);
+    }
+    a.email {
+        text-decoration: none;
+        color: var(--BLACK);
+        font-size: 16px;
+        border-bottom: var(--MUSTARD) 0.125em solid;
+    
+    }
+    a.email:hover {
+        background-color: var(--MUSTARD);
+    }
+}
+
+
+
+@media only screen and (min-width: 720px) {
+    .About {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        justify-content: center;
+    }
+    .info {
+        width: 80%;
+    }
+    .TinTin {
+        background-image: url('../images/tin-tin-logo.png');
+        height: 50vh;
+        width: 20%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: auto;
+    }
+    
+}

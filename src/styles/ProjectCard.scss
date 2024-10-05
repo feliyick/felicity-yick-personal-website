@@ -1,0 +1,88 @@
+
+.ProjectCard {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto;
+    // min-width: 550px;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 1em;
+    // margin-top: 1em;
+    font-family: 'inter';
+    margin-top: 0px;
+
+}
+
+.ProjectCard:hover {
+    box-shadow: 3px 2px 14px rgba(#262631, 0.4);
+    cursor: cell;
+}
+
+.preview-image {
+    display: flex;
+    // background-image: url('../images/PaintBrushBroad.png');
+    padding-bottom: 56.25%; /* 16:9 */
+    // margin: 2em;
+    width: inherit;
+    // height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-info {
+    width: inherit;
+    height: 50%;
+
+}
+.project-title {
+    font-size: 24px;
+    font-family: inter, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 1em;
+    color: var(--BLACK);
+}
+
+
+.project-desc {
+    font-size: 16px;
+    margin-top: 1em;
+    font-style: 200;
+    overflow-wrap: break-word;
+    color: var(--BLACK);
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color:var(--MUSTARD);
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    min-width: 80px;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--BLACK);
+}
+
+@media only screen and (min-width: 800px) {
+
+    .ProjectCard {
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        border-radius: 10px;
+        height: fit-content;
+        margin-top: 0px;
+    }
+}
+

@@ -1,0 +1,68 @@
+/*Fonts*/
+@import url('./colors.scss');
+
+.nav-container {
+    max-width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: var(--WHITE);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+}
+
+.nav-content {
+    max-width: 900px;
+    margin: auto;
+    font-family: inter, 'arial';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+// .nav-container.active {
+//     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.0) 100%);
+
+// }
+
+.name-button {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--MUSTARD);
+    padding-left: 1em;
+    // background-image: url('../images/tin-tin-logo.png');
+    // width: 10vh;
+    // height: 10vh;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    cursor: cell;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    // padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 1em;
+    
+}
+nav a.nav-label {
+    text-decoration: none;
+    display: block;
+    margin-left: 2em;
+    color: var(--BLACK);
+    font-size: 14px;
+    font-weight: bold;
+  
+ }
+
+nav a.nav-label:hover {
+    background-color: var(--MUSTARD);
+    cursor: cell;
+}
+
+

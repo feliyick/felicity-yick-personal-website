@@ -1,0 +1,46 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.graphics-container {
+    background-color: var(--WHITE);
+    z-index: 0;
+    padding: 2em;
+    position: relative;
+    margin: auto;
+}
+
+.graphics-featured {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--MUSTARD);
+    max-width: 800px;
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+@media only screen and (min-width: 800px) {
+    .project-cards {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        // flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        column-gap: 1em;
+        row-gap: 1em;
+
+    }
+
+    
+}

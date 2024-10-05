@@ -1,0 +1,247 @@
+.ShaderFun {
+    font-family: 'inter', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.shader-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.intro-row {
+    padding: 2em;
+}
+
+.shader-left-col {
+    text-align: center;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.project-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+.responsible-for {
+    font-size: 14px;
+    color:var(--DARKGREY);
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 1em;
+    
+}
+.shader-right-col {
+    margin-top: 2em;
+    font-size: 14px;
+}
+
+.maya-video-background {
+    background-image: url('../../images/dotted-wave.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.maya-video-one, .maya-video-two {
+    position: relative;
+    min-height: 200px;
+    max-width: 900px;
+    // max-height: 1000px;
+    // max-width: 1080px;
+    padding-top: 20%;
+    margin: auto;
+}
+
+.maya-video-one iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.maya-video-two iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+  }
+
+.shader-details {
+    margin:auto;
+    max-width: 900px;
+    margin-top: 1em;
+}
+
+.shader-types {
+    padding: 2em;
+    text-align: left;
+}
+.shader-types-title {
+    font-size: 24px;
+    border-left: var(--MUSTARD) 0.5em solid;
+    padding-left: 1em;
+    font-weight: bold;
+}
+
+.shader-types-list {
+    margin-left: 1em;
+}
+
+.shader-pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:auto;
+    max-width: 800px;
+}
+
+#shader-one {
+    background-image: url('../../images/ShaderFun/shader-fun-lambert.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 50%;
+    flex-grow: 1em;
+
+}
+#shader-two {
+    background-image: url('../../images/ShaderFun/shader-fun-blinn-square.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 50%;
+}
+#shader-three {
+    background-image: url('../../images/ShaderFun/shader-fun-matte.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 50%;
+}
+#shader-four {
+    background-image: url('../../images/ShaderFun/shader-fun-gradient.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 50%;
+}
+#shader-five {
+    background-image: url('../../images/ShaderFun/shader-fun-gradient.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 50%;
+}
+#shader-six {
+    background-image: url('../../images/ShaderFun/shader-fun-greyscale.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 50%;
+}
+#shader-seven {
+    background-image: url('../../images/ShaderFun/shader-fun-gaussian.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 50%;
+}
+#shader-eight {
+    background-image: url('../../images/ShaderFun/shader-fun-edgy.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 50%;
+}
+#shader-nine {
+    background-image: url('../../images/ShaderFun/shader-fun-bloom.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+    width: 50%;
+}
+#shader-ten {
+    background-image: url('../../images/ShaderFun/shader-fun-worley.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+    width: 50%;
+}
+
+
+
+
+@media only screen and (min-width: 720px) {
+
+    .shader-content {
+        display: flex;
+        flex-direction: column;
+        // max-width: 800px;
+        margin: auto;
+        padding: 3em;
+    }
+    
+    .intro-row {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        margin: auto;
+        column-gap: 0.3em
+    }
+    .shader-left-col {
+        width: 50%;
+    }
+    
+    .project-name {
+        font-size: 24px;
+        text-align: left;
+    
+    }
+
+    .responsible-for {
+        text-align: left;   
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+    }
+    .shader-right-col {
+        width: 50%;
+        font-size: 14px;
+        text-align: justify;
+
+    }
+
+    .shader-pics {
+        max-width: 100%;
+    }
+
+
+    #shader-one, #shader-two, #shader-three, #shader-four, #shader-five, #shader-six, #shader-seven, #shader-eight, #shader-nine, #shader-ten {
+        height: 300px;
+        width: 20%;
+    }
+}
