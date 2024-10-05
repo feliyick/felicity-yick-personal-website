@@ -1,5 +1,5 @@
 import '../styles/About.scss';
-import resume from '../pdfs/FelicityYickResume2021.pdf'
+import resume from '../pdfs/FelicityYickResume2024.pdf'
 
 import {Fade, Slide} from "react-awesome-reveal";
 import {Slide as SlideNormal} from "react-reveal"
@@ -28,8 +28,8 @@ const About = () => {
                     Equally as important, I love to paint, cook, and keeping a full Google calendar of exciting things to do in the city and hangouts with friends. 
                     <br></br>
                     <br></br>
-                    Feel free to reach out at
-                    <a href="mailto:felicityyick@gmail.com" class="email">  felicityyick@gmail.com </a>. 
+                    Feel free to reach out at 
+                    <a href="mailto:felicityyick@gmail.com" class="email"> felicityyick@gmail.com </a>. 
                     <br></br>
                     <br></br>
                     ˚ʚ♡ɞ˚⋆˚✿˖°

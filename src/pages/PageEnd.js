@@ -1,5 +1,5 @@
 import '../styles/PageEnd.scss'
-import Resume from '../pdfs/FelicityYickResume2021.pdf'
+import Resume from '../pdfs/FelicityYickResume2024.pdf'
 import {Zoom, Fade} from "react-awesome-reveal"
 
 const PageEnd = () => {
