@@ -25,6 +25,8 @@ import Lottie from 'react-lottie'
 import * as loading from './images/yellow-loader.json'
 import * as check from './images/yellow-check.json'
 
+import ScrollToTop from './scrollToTop';
+
 const loadingOptions = {
 	loop: true,
 	autoplay: true,
@@ -78,6 +80,7 @@ function App() {
 				
 			) : (
 				<Router>
+					<ScrollToTop></ScrollToTop>
 					<Routes>
 						<Route exact path="/" element={<Homepage />} />
 						<Route exact path="/projects" element={<ProjectHub />} />
