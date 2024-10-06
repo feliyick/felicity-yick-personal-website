@@ -10,7 +10,7 @@ const Demoreel = () => {
         <div>
             <Slide bottom>
                 <div className='video'>
-                    <iframe src="https://player.vimeo.com/video/472272277?h=9c76c805a8" width="1280" height="720" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/-co7LpUisB0?si=zZkkDyviky1EqXjn" width="1280" height="720" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </Slide>
             </div>

@@ -1,7 +1,6 @@
 
 .demoreel-container {
     // background-color: var(--WHITE);
-    z-index: -1;
     padding-left: 1em;
     padding-right: 1em;
     text-align:  center;
@@ -20,7 +19,7 @@
 
 .video {
     position: relative;
-    min-height: 250px;
+    min-height: 500px;
     // max-height: 1000px;
     // max-width: 1080px;
     padding-bottom: 10%;
