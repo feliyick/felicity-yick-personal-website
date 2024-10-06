@@ -328,9 +328,44 @@ a.hyperlink:hover {
 }
 
 
+a.resume-button {
+    text-decoration: none;
+    width: 30%;
+    border-bottom: var(--MUSTARD) 1em solid;
+    font-weight: bold;
+    color: var(--BLACK);
+}
+
+a.resume-button:hover {
+    background-color: var(--MUSTARD);
+    cursor: cell;
+}
+
+.homepage-left{
+    width: 100%;
+    text-align: left;
+    padding-left: 1em;
+    margin: auto;
+}
+.homepage-right {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+
+
 // ANIMATIONS
 
 @media only screen and (min-width: 720px) {
+
+    // .profile-image {
+    //     display: flex;
+    //     height: 60vh;
+    //     width: 100%;
+    // }
 
     .content {
         display: flex;
@@ -362,37 +397,9 @@ a.hyperlink:hover {
     .passions {
         flex-direction: column;
     }
-
-    a.resume-button {
-        text-decoration: none;
-        width: 30%;
-        border-bottom: var(--MUSTARD) 1em solid;
-        font-weight: bold;
-        color: var(--BLACK);
-    }
-    
-    a.resume-button:hover {
-        background-color: var(--MUSTARD);
-        cursor: cell;
-    }
     
 
-    .homepage-left{
-        width: 50%;
-        text-align: left;
-        padding-left: 1em;
-        margin: auto;
-    }
-    .homepage-right {
-        width: 50%;
-        margin: auto;
-        display: flex;
-    }
 
-    .profile-image {
-        height: 60vh;
-        width: 100%;
-    }
     
     
 .my-name {
