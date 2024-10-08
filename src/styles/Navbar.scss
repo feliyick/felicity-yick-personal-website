@@ -29,7 +29,8 @@
     font-weight: bold;
     font-size: 14px;
     color: var(--MUSTARD);
-    padding-left: 1em;
+    text-decoration: none; 
+    // padding-left: 1em;
     // background-image: url('../images/tin-tin-logo.png');
     // width: 10vh;
     // height: 10vh;
@@ -50,7 +51,7 @@ nav {
     padding-right: 1em;
 
 }
-nav a.nav-label {
+a.nav-label {
     text-decoration: none;
     display: block;
     margin-left: 2em;
@@ -60,7 +61,15 @@ nav a.nav-label {
 
  }
 
-nav a.nav-label:hover {
+ a.name-button:hover {
+    text-decoration: none; 
+    background-color: var(--MUSTARD);
+    color: var(--WHITE);
+
+    cursor: cell;
+}
+a.nav-label:hover {
+    text-decoration: none; 
     background-color: var(--MUSTARD);
     cursor: cell;
 }
