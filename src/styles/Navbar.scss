@@ -48,7 +48,7 @@ nav {
     display: flex;
     justify-content: space-around;
     padding-right: 1em;
-    
+
 }
 nav a.nav-label {
     text-decoration: none;
@@ -57,12 +57,10 @@ nav a.nav-label {
     color: var(--BLACK);
     font-size: 14px;
     font-weight: bold;
-  
+
  }
 
 nav a.nav-label:hover {
     background-color: var(--MUSTARD);
     cursor: cell;
 }
-
-
