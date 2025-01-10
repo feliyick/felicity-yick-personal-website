@@ -36,14 +36,14 @@ export default function Homepage() {
                 <Slide>
                   <p>
                     <br></br>
-                    AR Interactive Engineer @
+                    Contingent Technical Artist on the Horizon OS Art Team @
                     <a
-                      href="https://www.tiktok.com/"
+                      href="https://about.meta.com/realitylabs/"
                       class="hyperlink"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      TikTok.
+                      Meta Reality Labs.
                     </a>
                     <br></br>
                     <br></br>
