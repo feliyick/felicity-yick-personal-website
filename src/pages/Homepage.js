@@ -36,15 +36,16 @@ export default function Homepage() {
                 <Slide>
                   <p>
                     <br></br>
-                    Contingent Technical Artist on the Horizon OS Art Team @
+                    Contingent Technical Artist @ 
                     <a
                       href="https://about.meta.com/realitylabs/"
                       class="hyperlink"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Meta Reality Labs.
+                      Meta Reality Labs
                     </a>
+                    .
                     <br></br>
                     <br></br>
                     Creative AR/VR developer with a passion for leading teams
