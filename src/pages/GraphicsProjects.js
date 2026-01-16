@@ -2,7 +2,7 @@ import '../styles/GraphicsProjects.scss'
 import ProjectCard from '../components/ProjectCard'
 import graphicsProjectInfo from '../graphics-project-info'
 
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 
 const GraphicsProjects = ({start, end}) => {
