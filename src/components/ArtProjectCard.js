@@ -1,6 +1,4 @@
 import '../styles/ArtProjectCard.scss'
-import { useLocation } from 'react-router-dom';
-import background from '../images/PaintBrushBroad.png';
 import { useNavigate } from 'react-router-dom';
 
 const ArtProjectCard = ({image, title, desc, tags, page}) => {

@@ -28,7 +28,7 @@ const Klaus = () => {
                 </div>
                 <div className='klaus-background'>
                     <div className='klaus-video'>
-                        <iframe src="https://www.youtube.com/embed/WOw49N6Rfek?si=4tZqi7TP1hz1vCbL" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/WOw49N6Rfek?si=4tZqi7TP1hz1vCbL" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Klaus ZBrush Sculpt"></iframe>
                     </div>
                 </div>
                 

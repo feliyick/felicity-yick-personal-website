@@ -32,7 +32,7 @@ const MiniMinecraft = () => {
                 </div>
                 <div className='minecraft-background'>
                     <div className='minecraft-video'>
-                        <iframe src="https://player.vimeo.com/video/412736781?h=7995d48d44" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>                
+                        <iframe src="https://player.vimeo.com/video/412736781?h=7995d48d44" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Mini Minecraft Demo"></iframe>                
                     </div>
                 </div>
             </div>

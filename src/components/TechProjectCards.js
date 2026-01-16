@@ -1,6 +1,4 @@
 import '../styles/TechProjectCard.scss'
-import { useLocation } from 'react-router-dom';
-import background from '../images/PaintBrushBroad.png';
 import { useNavigate } from 'react-router-dom';
 
 const TechProjectCard = ({image, title, desc, tags, page}) => {

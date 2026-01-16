@@ -36,7 +36,7 @@ const Treble = () => {
                 </div>
                 <div className='treble-background'>
                     <div className="treble-video">
-                        <iframe  class="treble-demo-video" src="https://drive.google.com/file/d/1hgVzRPwRKl6K4gKwfRWAHKlZjRhP5V3q/preview" allow="autoplay"></iframe>
+                        <iframe  class="treble-demo-video" src="https://drive.google.com/file/d/1hgVzRPwRKl6K4gKwfRWAHKlZjRhP5V3q/preview" allow="autoplay" title="Treble Demo Video"></iframe>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ const Treble = () => {
                     <h1 className='treble-figma-title'>Figma UI/UX</h1>
 
                     <div className='treble-figma-details'>
-                        <iframe class="treble-figma-design" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQ4lWNLF7X9c0xCrQyIoK2z%2FMusic-Web-App%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+                        <iframe class="treble-figma-design" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQ4lWNLF7X9c0xCrQyIoK2z%2FMusic-Web-App%3Fnode-id%3D0%253A1" allowfullscreen title="Treble Figma Design"></iframe>
                     </div>
                 </div>
 

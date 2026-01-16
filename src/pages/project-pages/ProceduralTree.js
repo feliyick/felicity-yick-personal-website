@@ -45,7 +45,7 @@ const ProceduralTree = () => {
                             <br></br>
                             <br></br>
                             <div className='.terrarium-video-one'>
-                                <iframe src="https://www.youtube.com/embed/NfBCGw2VdVs?si=kR0hixpyx2ltizJ2" width="1000" height="600" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/NfBCGw2VdVs?si=kR0hixpyx2ltizJ2" width="1000" height="600" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Procedural Orange Tree Demo"></iframe>
                             </div>
                         </div>
                     </div>

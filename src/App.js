@@ -47,7 +47,6 @@ const checkOptions = {
 
 function App() {
 
-	const [data, setData] = useState([]);
 	const [loading, setLoading] = useState(undefined);
 	const [completed, setCompleted] = useState(undefined);
 
@@ -57,7 +56,6 @@ function App() {
 				.then((response) => response.json())
 				.then((json) => {
 					console.log(json);
-					setData(json);
 					setLoading(true);
 
 					setTimeout(() => {

@@ -35,7 +35,7 @@ const ProceduralTerrariums = () => {
                         Get to know the project by watching this (hopefully not cringey) final presentation! Or if you are a reader, check out my final thesis
                         <a href={ThesisPDF} class="hyperlink" target="_blank" rel="noreferrer"> here. </a>
                         <div className='terrarium-presentation-video'>
-                            <iframe src="https://www.youtube.com/embed/dHzb96EucTk?si=IFu8OJxhhT92-5Rj?autoplay=1&mute=1" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/dHzb96EucTk?si=IFu8OJxhhT92-5Rj?autoplay=1&mute=1" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Procedural Terrariums Presentation"></iframe>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ const ProceduralTerrariums = () => {
                             <p>Below is a sped up demo of the generator tool in action, showcasing how to quickly generate terrariums with randomized features.</p>
 
                             <div className='terrarium-video-one'>
-                                <iframe src="https://www.youtube.com/embed/fHJIVween4s?si=cRaOhsdebWm217Qx" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/fHJIVween4s?si=cRaOhsdebWm217Qx" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Terrarium Generator Demo"></iframe>
                             </div>
                             <br></br>
                             <br></br>
@@ -71,7 +71,7 @@ const ProceduralTerrariums = () => {
                             <br></br>
                             <br></br>
                             <div className='terrarium-video-two'>
-                                <iframe src={`https://www.youtube.com/embed/HkwyvEdVu-U?si=3dLPG5UIsnIeLoAF?autoplay=1&mute=1`} width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                <iframe src={`https://www.youtube.com/embed/HkwyvEdVu-U?si=3dLPG5UIsnIeLoAF?autoplay=1&mute=1`} width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Terrarium Paint Tool Demo"></iframe>
                             </div>
                             <br></br>
                             <br></br>
@@ -85,7 +85,7 @@ const ProceduralTerrariums = () => {
                                 <li>Length, width, and bend of the stem</li>
                             </ul>
                             <div className='terrarium-video-three'>
-                                <iframe src="https://www.youtube.com/embed/PZOc5mBlcqc?si=upOV5mnASHppP8Yc" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/PZOc5mBlcqc?si=upOV5mnASHppP8Yc" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Button Fern HDA Parameters"></iframe>
                             </div>
                         </div>
 

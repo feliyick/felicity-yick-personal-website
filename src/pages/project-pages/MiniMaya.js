@@ -31,10 +31,10 @@ const MiniMaya = () => {
                 </div>
                 <div className='maya-video-background'>
                     <div className='maya-video-one'>
-                        <iframe src="https://www.youtube.com/embed/KgivA9He360?si=28Fa726OWfHBjBCB" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/KgivA9He360?si=28Fa726OWfHBjBCB" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Mini Maya Half-Edge Mesh Operations"></iframe>
                     </div>
                     <div className='maya-video-two'>
-                        <iframe src="https://www.youtube.com/embed/3nIL43VZ7rk?si=X1TbiwxXh7HR6GN3" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/3nIL43VZ7rk?si=X1TbiwxXh7HR6GN3" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Mini Maya Skeleton and Skinning"></iframe>
                     </div>
                 </div>
             </div>
