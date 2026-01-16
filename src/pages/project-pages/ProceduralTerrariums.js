@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import PageEnd from '../PageEnd'
 import ThesisPDF from '../../pdfs/SeniorDesignDocument_FelicityYick.pdf'
 
-import { Fade, Bounce } from 'react-reveal'
+import { Fade, Bounce } from 'react-awesome-reveal'
 
 const ProceduralTerrariums = () => {
     return (

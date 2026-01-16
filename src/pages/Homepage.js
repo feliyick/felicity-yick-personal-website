@@ -9,12 +9,9 @@ import PageEnd from "./PageEnd";
 import { useNavigate } from "react-router-dom";
 import TechProjects from "./TechProjects";
 import ProfileImage from "./../images/profile-image.jpg";
-import Resume from "../pdfs/FelicityYickResume2024.pdf";
+import Resume from "../pdfs/Felicity_Yick_Resume_2026.pdf";
 
 // ANIMATIONS
-import Zoom from "react-reveal/Zoom"; // Importing Zoom effect
-// import Fade from 'react-reveal/Fade';
-// import Slide from 'react-reveal/Slide';
 import { Fade, Slide } from "react-awesome-reveal";
 
 export default function Homepage() {

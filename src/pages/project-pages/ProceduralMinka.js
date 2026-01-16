@@ -7,7 +7,7 @@ import MinkaParams from '../../images/Minka/MinkaParams.png'
 import MinkaTwoStory from '../../images/Minka/MinkaTwoStory.png'
 import MinkaCourtyard from '../../images/Minka/MinkaCourtyard.png'
 
-import { Fade, Bounce } from 'react-reveal'
+import { Fade, Bounce } from 'react-awesome-reveal'
 
 const ProceduralMinka = () => {
     return (

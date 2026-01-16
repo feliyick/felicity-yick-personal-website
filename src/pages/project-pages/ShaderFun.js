@@ -1,7 +1,7 @@
 import '../../styles/project-page-styles/ShaderFun.scss'
 import Navbar from '../../components/Navbar'
 import PageEnd from '../PageEnd'
-import {Fade, Bounce} from 'react-reveal'
+import {Fade, Bounce} from 'react-awesome-reveal'
 
 
 const ShaderFun = () => {

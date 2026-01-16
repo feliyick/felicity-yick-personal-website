@@ -1,0 +1,12 @@
+{
+    "short_name": "Felicity Yick",
+    "name": "Felicity Yick | CG + Art",
+    "icons": [
+        {
+            "src": "./favicon.ico",
+            "type": "images/x-icon",
+            "sizes": "48x48"
+        }
+    ],
+    "start_url": "/index.html"
+}

@@ -1,81 +1,44 @@
 
 .demoreel-container {
-    // background-color: var(--WHITE);
-    padding-left: 1em;
-    padding-right: 1em;
-    display:  inline-flexbox;
+    padding: 4em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    min-height: 50vh;
-    max-height:90vh;
-    // margin: auto;
+    min-height: 60vh;
     background-image: url('../images/lime-wave.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-
-    
 }
 
 
 .video {
     position: relative;
-    min-height: 400px;
-    // max-height: 1000px;
-    // max-width: 1080px;
-    padding-bottom: 10%;
-    margin: auto;
-
+    width: 100%;
+    max-width: 900px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 0 auto;
 }
 
 .video iframe {
   position: absolute;
-  top: 25px;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 8px;
 }
 
 
 @media only screen and (max-width: 800px) {
-  // .demoreel-container {
-  //     /* Set rules to fill background */
-  //     min-height: 100%;
-  //     min-width: 2560px;
-
-  //     /* Set up proportionate scaling */
-  //     width: 100%;    
-  // }
-
   .demoreel-container {
-    // background-color: var(--WHITE);
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top:100px;
-    padding-bottom:100px;
-    text-align:  center;
-    position: relative;
-    justify-content: center;
-    min-height: 20vh;
-    max-height:50vh;
-    // margin: auto;
-    background-image: url('../images/lime-wave.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 3em 1em;
+    min-height: 40vh;
+  }
 
-
-    
-}
-  
   .video {
-    // position: relative;
-    min-height: 200px;
-    max-width: 650px;
-    // max-height: 1000px;
-    // max-width: 1080px;
-    // padding-bottom: 10%;
-    // margin: auto;
-
-}
+    max-width: 100%;
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio on mobile */
+  }
 }

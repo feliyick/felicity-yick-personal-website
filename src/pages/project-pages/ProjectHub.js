@@ -5,7 +5,7 @@ import TechProjects from "../TechProjects"
 import Navbar from '../../components/Navbar'
 import PageEnd from '../PageEnd'
 
-import {Fade as FadeRegular } from 'react-reveal';
+import {Fade as FadeRegular } from 'react-awesome-reveal';
 import { Fade, Slide } from "react-awesome-reveal";
 
 const ProjectHub = () => {

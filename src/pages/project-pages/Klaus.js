@@ -2,7 +2,7 @@ import '../../styles/project-page-styles/Klaus.scss'
 import Navbar from '../../components/Navbar'
 import PageEnd from '../PageEnd'
 
-import {Fade, Bounce} from 'react-reveal'
+import {Fade, Bounce} from 'react-awesome-reveal'
 
 const Klaus = () => {
     return(
@@ -11,7 +11,7 @@ const Klaus = () => {
             <div className='klaus-content'>
                 <div className='intro-row'>
                     <div className='klaus-left-col'>
-                        <Fade bottom cascade><div className='project-name'>Klaus</div></Fade>
+                        <Fade direction="up" cascade><div className='project-name'>Klaus</div></Fade>
                         <div className='responsible-for'>Responsible for the whole sculpt. Credit to Netflix Animation for the character design.</div>
                         <Bounce cascade>
                         <div className='tags'>

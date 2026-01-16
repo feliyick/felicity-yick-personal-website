@@ -2,7 +2,6 @@ import '../styles/About.scss';
 import resume from '../pdfs/FelicityYickResume2024.pdf'
 
 import {Fade, Slide} from "react-awesome-reveal";
-import {Slide as SlideNormal} from "react-reveal"
 
 const About = () => {
     return (
@@ -36,9 +35,9 @@ const About = () => {
                 </div>
                 </Slide>
             </div>
-            <SlideNormal top>
+            <Slide direction="down">
             <div className='TinTin'></div>
-            </SlideNormal>
+            </Slide>
         </div>
     )
 }
