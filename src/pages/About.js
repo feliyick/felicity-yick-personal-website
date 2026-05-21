@@ -1,5 +1,5 @@
 import '../styles/About.scss';
-import resume from '../pdfs/FelicityYickResume2024.pdf'
+import resume from '../pdfs/Felicity_Resume_May2026.pdf'
 
 import {Fade, Slide} from "react-awesome-reveal";
 

@@ -9,7 +9,7 @@ import PageEnd from "./PageEnd";
 import { useNavigate } from "react-router-dom";
 import TechProjects from "./TechProjects";
 import ProfileImage from "./../images/profile-image.jpg";
-import Resume from "../pdfs/Felicity_Yick_Resume_2026.pdf";
+import Resume from "../pdfs/Felicity_Resume_May2026.pdf";
 
 // ANIMATIONS
 import { Fade, Slide } from "react-awesome-reveal";
