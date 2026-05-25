@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5fe3141.css",
-    "main.js": "/static/js/main.d506c78c.js",
+    "main.css": "/static/css/main.1d798132.css",
+    "main.js": "/static/js/main.cf99e087.js",
     "static/media/SeniorDesignDocument_FelicityYick.pdf": "/static/media/SeniorDesignDocument_FelicityYick.024c3cd054c028ca46b6.pdf",
     "static/media/vistas-pocket-content.png": "/static/media/vistas-pocket-content.1079002f1d2fa7a464dd.png",
     "static/media/vistas-far-field.png": "/static/media/vistas-far-field.80ba9e4fa9ba59b3339d.png",
@@ -22,6 +22,7 @@
     "static/media/tiktok-effect6.mp4": "/static/media/tiktok-effect6.c7d0bae75d3539d149cc.mp4",
     "static/media/tiktok-effect5.mp4": "/static/media/tiktok-effect5.91f022e93bcc9a9212ce.mp4",
     "static/media/tin-tin-logo.png": "/static/media/tin-tin-logo.80bae63e42ad4b4ce085.png",
+    "static/media/effecthouse-create-with-ai.png": "/static/media/effecthouse-create-with-ai.4031277b95be870f4284.png",
     "static/media/procedural-terrariums.png": "/static/media/procedural-terrariums.596bb64b14ba54506554.png",
     "static/media/shader-fun-worley.png": "/static/media/shader-fun-worley.f3a691a566e11d205ed5.png",
     "static/media/MinkaCourtyard.png": "/static/media/MinkaCourtyard.2cc0a57eceba11ab47ab.png",
@@ -51,13 +52,15 @@
     "static/media/TinyTavern02.jpg": "/static/media/TinyTavern02.2cc1db32238b089d213c.jpg",
     "static/media/hyperscape-hero.jpg": "/static/media/hyperscape-hero.2cdfe9ec5829997bc9d7.jpg",
     "static/media/TinyTavern01.jpg": "/static/media/TinyTavern01.5987cdc2f5599fd07d75.jpg",
+    "static/media/tiktok.svg": "/static/media/tiktok.3126a2428af6689d7955f0b9aa034bf2.svg",
+    "static/media/meta.svg": "/static/media/meta.241e8e14d19b7ecd17a79a11ca82d55d.svg",
     "index.html": "/index.html",
     "static/media/placeholder.svg": "/static/media/placeholder.1e05d5fc46ce832ea477c5260a5d9e9d.svg",
-    "main.d5fe3141.css.map": "/static/css/main.d5fe3141.css.map",
-    "main.d506c78c.js.map": "/static/js/main.d506c78c.js.map"
+    "main.1d798132.css.map": "/static/css/main.1d798132.css.map",
+    "main.cf99e087.js.map": "/static/js/main.cf99e087.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5fe3141.css",
-    "static/js/main.d506c78c.js"
+    "static/css/main.1d798132.css",
+    "static/js/main.cf99e087.js"
   ]
 }

@@ -32,9 +32,20 @@ const WorkGridTile = ({ item }) => {
                 />
             )}
 
-            {/* Default state: thin title strip at the bottom */}
+            {item.logo && (
+                <div className="work-tile-logo">
+                    <img src={item.logo} alt={`${item.scope} logo`} />
+                </div>
+            )}
+
+            {/* Default state: title + tool chips strip at the bottom */}
             <div className="work-tile-caption">
                 <span className="work-tile-caption-title">{item.title}</span>
+                <div className="work-tile-caption-tools">
+                    {item.tools.map((t, i) => (
+                        <span key={i} className="work-tile-caption-tool">{t}</span>
+                    ))}
+                </div>
             </div>
 
             {/* Hover state: full detail panel slides up from the bottom over the image */}

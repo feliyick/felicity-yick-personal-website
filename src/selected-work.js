@@ -4,8 +4,13 @@ import HyperscapeHero from './images/hyperscape-hero.jpg'
 import MetaRealityLabsHero from './images/meta-reality-labs-hero.png'
 import Placeholder from './images/work/placeholder.svg'
 
-// TikTok AR effects hero image
+// TikTok hero images
 import TikTokHero from './images/TikTokEffects/tiktok-hero.png'
+import TikTokCreateWithAIHero from './images/TikTokEffects/effecthouse-create-with-ai.png'
+
+// Company logos
+import MetaLogo from './images/logos/meta.svg'
+import TikTokLogo from './images/logos/tiktok.svg'
 
 // Personal project imagery (reused from graphics-project-info / art-project-info)
 import Klaus from './images/Klaus/Klaus-03.jpg'
@@ -29,7 +34,8 @@ const CAT = {
 const selectedWork = [
     {
         image: VistasFarField,
-        title: 'Switchable Vistas — Immersive Homes',
+        logo: MetaLogo,
+        title: 'Meta Reality Labs — Immersive Homes for Connect 2025',
         scope: 'Meta Reality Labs',
         tools: ['Python', 'Unreal Engine', 'USD', 'Lightmap Baking', 'Quest'],
         categories: [CAT.PIPELINE, CAT.REALTIME, CAT.SHADERS],
@@ -38,7 +44,8 @@ const selectedWork = [
     },
     {
         image: MetaRealityLabsHero,
-        title: 'AI Game Creation Platform',
+        logo: MetaLogo,
+        title: '(In Progress) Meta Reality Labs — AI-Powered Mobile Game Creation Platform',
         scope: 'Meta Reality Labs',
         tools: ['LLM Orchestration', 'AI Tooling', 'Experimentation', 'Mobile'],
         categories: [CAT.AI, CAT.PIPELINE],
@@ -56,6 +63,7 @@ const selectedWork = [
     },
     {
         image: Placeholder,
+        logo: MetaLogo,
         title: 'APK Lifecycle Tool',
         scope: 'Meta Reality Labs',
         tools: ['Python', 'GUI', 'Developer Tooling', 'VR'],
@@ -65,7 +73,8 @@ const selectedWork = [
     },
     {
         image: TikTokHero,
-        title: 'AR Effect Production — Effect House',
+        logo: TikTokLogo,
+        title: 'TikTok — AR Effect Production',
         scope: 'TikTok',
         tools: ['Lua', 'TypeScript', 'GLSL', 'Effect House', 'Mobile AR'],
         categories: [CAT.REALTIME, CAT.SHADERS, CAT.AI],
@@ -73,8 +82,9 @@ const selectedWork = [
         page: '/work/tiktok-ar-effects',
     },
     {
-        image: Placeholder,
-        title: 'AI Generated Effects — Effect House',
+        image: TikTokCreateWithAIHero,
+        logo: TikTokLogo,
+        title: 'TikTok — Create with AI Product for Effect House',
         scope: 'TikTok',
         tools: ['TypeScript', 'LLM Tooling', 'Visual Scripting', 'Effect House'],
         categories: [CAT.AI, CAT.PIPELINE],
@@ -83,6 +93,7 @@ const selectedWork = [
     },
     {
         image: HyperscapeHero,
+        logo: MetaLogo,
         title: 'Hyperscape Prototyping',
         scope: 'Meta Reality Labs',
         tools: ['3D Gaussian Splatting', 'Radiance Fields', 'Unreal Engine', 'Python', 'Quest'],
