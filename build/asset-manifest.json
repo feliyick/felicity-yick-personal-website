@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b898593.css",
-    "main.js": "/static/js/main.d5b4fa0c.js",
+    "main.css": "/static/css/main.8c566119.css",
+    "main.js": "/static/js/main.e88025e1.js",
     "static/media/SeniorDesignDocument_FelicityYick.pdf": "/static/media/SeniorDesignDocument_FelicityYick.024c3cd054c028ca46b6.pdf",
-    "static/media/vistas-interior.png": "/static/media/vistas-interior.21dd49eb538949e8d7ff.png",
     "static/media/vistas-pocket-content.png": "/static/media/vistas-pocket-content.1079002f1d2fa7a464dd.png",
     "static/media/vistas-far-field.png": "/static/media/vistas-far-field.80ba9e4fa9ba59b3339d.png",
     "static/media/Minecraft-Ice.gif": "/static/media/Minecraft-Ice.2e28663a36867268b3e6.gif",
@@ -36,17 +35,19 @@
     "static/media/Felicity - Design Engineer Resume.pdf": "/static/media/Felicity - Design Engineer Resume.fbc356346410e69c99c8.pdf",
     "static/media/minecraft_textures_all.png": "/static/media/minecraft_textures_all.66c97ba4e68d2e8beb4f.png",
     "static/media/github-circle.png": "/static/media/github-circle.1c95b85d86a7c25b6f3c.png",
+    "static/media/meta-reality-labs-hero.png": "/static/media/meta-reality-labs-hero.1e9f9d862534bafac46c.png",
     "static/media/MinkaParams.png": "/static/media/MinkaParams.3ceba57db1223306a38c.png",
     "static/media/shader-fun-blinn.png": "/static/media/shader-fun-blinn.feaff2e5d72d3a7c7519.png",
     "static/media/TinyTavern02.jpg": "/static/media/TinyTavern02.2cc1db32238b089d213c.jpg",
+    "static/media/hyperscape-hero.jpg": "/static/media/hyperscape-hero.2cdfe9ec5829997bc9d7.jpg",
     "static/media/TinyTavern01.jpg": "/static/media/TinyTavern01.5987cdc2f5599fd07d75.jpg",
     "index.html": "/index.html",
     "static/media/placeholder.svg": "/static/media/placeholder.1e05d5fc46ce832ea477c5260a5d9e9d.svg",
-    "main.2b898593.css.map": "/static/css/main.2b898593.css.map",
-    "main.d5b4fa0c.js.map": "/static/js/main.d5b4fa0c.js.map"
+    "main.8c566119.css.map": "/static/css/main.8c566119.css.map",
+    "main.e88025e1.js.map": "/static/js/main.e88025e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b898593.css",
-    "static/js/main.d5b4fa0c.js"
+    "static/css/main.8c566119.css",
+    "static/js/main.e88025e1.js"
   ]
 }
