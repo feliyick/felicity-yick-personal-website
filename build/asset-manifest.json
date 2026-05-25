@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c566119.css",
-    "main.js": "/static/js/main.e88025e1.js",
+    "main.css": "/static/css/main.d5fe3141.css",
+    "main.js": "/static/js/main.640c2cf2.js",
     "static/media/SeniorDesignDocument_FelicityYick.pdf": "/static/media/SeniorDesignDocument_FelicityYick.024c3cd054c028ca46b6.pdf",
     "static/media/vistas-pocket-content.png": "/static/media/vistas-pocket-content.1079002f1d2fa7a464dd.png",
     "static/media/vistas-far-field.png": "/static/media/vistas-far-field.80ba9e4fa9ba59b3339d.png",
+    "static/media/tiktok-effect9.mp4": "/static/media/tiktok-effect9.b3bce020333c2bac8ed3.mp4",
     "static/media/Minecraft-Ice.gif": "/static/media/Minecraft-Ice.2e28663a36867268b3e6.gif",
     "static/media/LSystemGif.gif": "/static/media/LSystemGif.3f4ac85a5e7019b71601.gif",
     "static/media/Minecraft-Grass.gif": "/static/media/Minecraft-Grass.71389857ff3ffd47d662.gif",
     "static/media/shader-fun-gradient.gif": "/static/media/shader-fun-gradient.0bc96b4c32953f128133.gif",
     "static/media/Minecraft-Slime.gif": "/static/media/Minecraft-Slime.f653cc8aa18c726284d1.gif",
+    "static/media/tiktok-effect3.mp4": "/static/media/tiktok-effect3.9b9ef76a3bb51bbc39a9.mp4",
+    "static/media/tiktok-effect7.mp4": "/static/media/tiktok-effect7.065621bd7e9c5a06bc68.mp4",
     "static/media/Minecraft-Desert.gif": "/static/media/Minecraft-Desert.cac56e9204b0b2b4ce8f.gif",
     "static/media/MinkaRender2.png": "/static/media/MinkaRender2.eedada79d45ac31c761f.png",
+    "static/media/tiktok-effect1.mp4": "/static/media/tiktok-effect1.ca9630ebb71e703f3d9e.mp4",
+    "static/media/tiktok-effect2.mp4": "/static/media/tiktok-effect2.96c76782d5a6f39b1887.mp4",
+    "static/media/tiktok-effect8.mp4": "/static/media/tiktok-effect8.1611334eaf0483320567.mp4",
     "static/media/MinkaRender1.png": "/static/media/MinkaRender1.6d87f5f13bdcad690f99.png",
+    "static/media/tiktok-effect6.mp4": "/static/media/tiktok-effect6.c7d0bae75d3539d149cc.mp4",
+    "static/media/tiktok-effect5.mp4": "/static/media/tiktok-effect5.91f022e93bcc9a9212ce.mp4",
     "static/media/tin-tin-logo.png": "/static/media/tin-tin-logo.80bae63e42ad4b4ce085.png",
     "static/media/procedural-terrariums.png": "/static/media/procedural-terrariums.596bb64b14ba54506554.png",
     "static/media/shader-fun-worley.png": "/static/media/shader-fun-worley.f3a691a566e11d205ed5.png",
@@ -21,8 +29,10 @@
     "static/media/MinkaTwoStory.png": "/static/media/MinkaTwoStory.fadebdc7136316b1d170.png",
     "static/media/MiniMayaCube.gif": "/static/media/MiniMayaCube.9afd9c8157ea698a33ff.gif",
     "static/media/shader-fun-edgy.png": "/static/media/shader-fun-edgy.29fb0435791309a35c5c.png",
+    "static/media/tiktok-hero.png": "/static/media/tiktok-hero.05b21e6b2f1927158c1d.png",
     "static/media/shader-fun-bloom.png": "/static/media/shader-fun-bloom.090360b078f5c57db447.png",
     "static/media/shader-fun-blinn-square.png": "/static/media/shader-fun-blinn-square.ecc826dd3769c2bd3220.png",
+    "static/media/tiktok-effect4.mp4": "/static/media/tiktok-effect4.2e83b7d1bfbe274ad4c3.mp4",
     "static/media/shader-fun-matte.png": "/static/media/shader-fun-matte.79c4514b3153cc1a18ff.png",
     "static/media/shader-fun-lambert.png": "/static/media/shader-fun-lambert.0a9219949408350feede.png",
     "static/media/Klaus-03.jpg": "/static/media/Klaus-03.da256ac8b19dad99a5a5.jpg",
@@ -43,11 +53,11 @@
     "static/media/TinyTavern01.jpg": "/static/media/TinyTavern01.5987cdc2f5599fd07d75.jpg",
     "index.html": "/index.html",
     "static/media/placeholder.svg": "/static/media/placeholder.1e05d5fc46ce832ea477c5260a5d9e9d.svg",
-    "main.8c566119.css.map": "/static/css/main.8c566119.css.map",
-    "main.e88025e1.js.map": "/static/js/main.e88025e1.js.map"
+    "main.d5fe3141.css.map": "/static/css/main.d5fe3141.css.map",
+    "main.640c2cf2.js.map": "/static/js/main.640c2cf2.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c566119.css",
-    "static/js/main.e88025e1.js"
+    "static/css/main.d5fe3141.css",
+    "static/js/main.640c2cf2.js"
   ]
 }

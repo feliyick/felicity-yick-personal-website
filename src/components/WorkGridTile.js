@@ -15,17 +15,29 @@ const WorkGridTile = ({ item }) => {
             className="work-tile"
             onClick={() => navigate(item.page)}
         >
-            <div
-                className="work-tile-image"
-                style={{ backgroundImage: `url(${item.image})` }}
-            />
+            {item.video ? (
+                <video
+                    className="work-tile-video"
+                    src={item.video}
+                    poster={item.image}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                />
+            ) : (
+                <div
+                    className="work-tile-image"
+                    style={{ backgroundImage: `url(${item.image})` }}
+                />
+            )}
 
             {/* Default state: thin title strip at the bottom */}
             <div className="work-tile-caption">
                 <span className="work-tile-caption-title">{item.title}</span>
             </div>
 
-            {/* Hover state: full detail panel slides up from the bottom */}
+            {/* Hover state: full detail panel slides up from the bottom over the image */}
             <div className="work-tile-details">
                 <div className="work-tile-scope">{item.scope}</div>
                 <h3 className="work-tile-details-title">{item.title}</h3>

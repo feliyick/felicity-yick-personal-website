@@ -4,6 +4,9 @@ import HyperscapeHero from './images/hyperscape-hero.jpg'
 import MetaRealityLabsHero from './images/meta-reality-labs-hero.png'
 import Placeholder from './images/work/placeholder.svg'
 
+// TikTok AR effects hero image
+import TikTokHero from './images/TikTokEffects/tiktok-hero.png'
+
 // Personal project imagery (reused from graphics-project-info / art-project-info)
 import Klaus from './images/Klaus/Klaus-03.jpg'
 import TinyTavern from './images/TinyTavern/TinyTavern01.jpg'
@@ -59,6 +62,24 @@ const selectedWork = [
         categories: [CAT.PIPELINE, CAT.REALTIME],
         blurb: 'Unified GUI wrapping build, install, test, and publish for VR APKs — eliminated context-switching across the previously fragmented toolchain.',
         page: '/work/apk-lifecycle-tool',
+    },
+    {
+        image: TikTokHero,
+        title: 'AR Effect Production — Effect House',
+        scope: 'TikTok',
+        tools: ['Lua', 'TypeScript', 'GLSL', 'Effect House', 'Mobile AR'],
+        categories: [CAT.REALTIME, CAT.SHADERS, CAT.AI],
+        blurb: 'Sole technical artist on rotating production pods — shipped 50+ AR effects across shader R&D, GAN transformations, server-rendered ML, and branded campaigns (DreamWorks, Met Gala 2024). 10M+ users reached.',
+        page: '/work/tiktok-ar-effects',
+    },
+    {
+        image: Placeholder,
+        title: 'AI Generated Effects — Effect House',
+        scope: 'TikTok',
+        tools: ['TypeScript', 'LLM Tooling', 'Visual Scripting', 'Effect House'],
+        categories: [CAT.AI, CAT.PIPELINE],
+        blurb: 'Core engineer on Effect House\'s "Create with AI" platform feature — modular TypeScript framework auto-generating visual-scripting logic. Supported 10K+ AI-generated effects on launch.',
+        page: '/work/tiktok-ai-effects',
     },
     {
         image: HyperscapeHero,

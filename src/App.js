@@ -22,6 +22,8 @@ import SwitchableVistas from './pages/work-pages/SwitchableVistas';
 import HyperscapePrototyping from './pages/work-pages/HyperscapePrototyping';
 import APKLifecycleTool from './pages/work-pages/APKLifecycleTool';
 import AIGameCreationPlatform from './pages/work-pages/AIGameCreationPlatform';
+import TikTokAREffects from './pages/work-pages/TikTokAREffects';
+import TikTokAIEffects from './pages/work-pages/TikTokAIEffects';
 
 import React, { useEffect, useState } from 'react'
 import Lottie from 'react-lottie'
@@ -99,6 +101,8 @@ function App() {
 						<Route exact path="/work/hyperscape-prototyping" element={<HyperscapePrototyping />} />
 						<Route exact path="/work/apk-lifecycle-tool" element={<APKLifecycleTool />} />
 						<Route exact path="/work/ai-game-creation-platform" element={<AIGameCreationPlatform />} />
+						<Route exact path="/work/tiktok-ar-effects" element={<TikTokAREffects />} />
+						<Route exact path="/work/tiktok-ai-effects" element={<TikTokAIEffects />} />
 					</Routes>
 				</Router>
 			)}

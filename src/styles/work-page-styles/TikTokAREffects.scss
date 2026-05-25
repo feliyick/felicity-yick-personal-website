@@ -1,0 +1,82 @@
+.featured-effect {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 1em;
+}
+
+.featured-effect-video {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #000;
+    display: block;
+}
+
+.featured-effect-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.featured-effect-details p {
+    margin: 0 0 0.5em 0;
+    line-height: 1.5;
+}
+
+.featured-effect-techniques-label {
+    font-weight: 600;
+    margin-top: 0.5em !important;
+}
+
+.featured-effect-techniques {
+    padding-left: 1.5em;
+    margin: 0;
+}
+
+.featured-effect-techniques li {
+    margin-bottom: 0.5em;
+    line-height: 1.55;
+}
+
+@media only screen and (min-width: 720px) {
+    .featured-effect {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2em;
+    }
+
+    .featured-effect-video {
+        flex: 0 0 320px;
+        max-width: 320px;
+    }
+
+    .featured-effect-details {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+}
+
+.tiktok-effects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.tiktok-effect-video {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #000;
+    display: block;
+}
+
+@media only screen and (min-width: 720px) {
+    .tiktok-effects-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.25em;
+    }
+}
