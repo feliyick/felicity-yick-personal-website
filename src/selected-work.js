@@ -33,7 +33,7 @@ const selectedWork = [
         scope: 'Meta Reality Labs',
         tools: ['Python', 'Unreal Engine', 'USD', 'Lightmap Baking', 'Quest'],
         categories: [CAT.PIPELINE, CAT.REALTIME, CAT.SHADERS],
-        blurb: 'Python-based Unreal→USD asset ingestion pipeline with LODs, texture atlases, and tuned lightmap baking for standalone VR. Shipped in Quest OS v81 for Connect 2025.',
+        blurb: 'Productionised the team\'s Unreal→USD ingestion pipeline (Blueprints + Python, custom C++ source extensions) — LODs, atlases, tuned lightmap baking for standalone VR. Shipped in Quest OS v81 for Connect 2025.',
         page: '/work/switchable-vistas',
     },
     {
@@ -69,7 +69,7 @@ const selectedWork = [
         scope: 'TikTok',
         tools: ['Lua', 'TypeScript', 'GLSL', 'Effect House', 'Mobile AR'],
         categories: [CAT.REALTIME, CAT.SHADERS, CAT.AI],
-        blurb: 'Sole technical artist on rotating production pods — shipped 50+ AR effects across shader R&D, GAN transformations, server-rendered ML, and branded campaigns (DreamWorks, Met Gala 2024). 10M+ users reached.',
+        blurb: 'Embedded technical artist on rotating production pods — owned 50+ AR effects end-to-end across shader R&D, GAN transformations, server-rendered ML, and branded campaigns (DreamWorks, Met Gala 2024). 10M+ users reached.',
         page: '/work/tiktok-ar-effects',
     },
     {

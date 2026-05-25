@@ -38,12 +38,13 @@ const TikTokAREffects = () => {
                         </Bounce>
                     </div>
                     <div className='work-right-col'>
-                        Sole technical artist on rotating production pods at TikTok Effect House. Owned the
-                        technical implementation of AR effects end-to-end — translating the PM and creative
-                        team's vision into shippable Lua / TypeScript / shader code on TikTok's internal AR
-                        engine. Over two and a half years, shipped 50+ effects spanning shader R&amp;D, ML-driven
-                        transformations, branded campaigns, and game mechanics — reaching audiences from
-                        hundreds of thousands to multi-millions per effect.
+                        Embedded technical artist on rotating production pods at TikTok Effect House — the
+                        sole TA per pod, working alongside fellow technical artists across the wider team.
+                        Owned the technical implementation of AR effects end-to-end on each pod — translating
+                        the PM and creative team's vision into shippable Lua / TypeScript / shader code on
+                        TikTok's internal AR engine. Over two and a half years, shipped 50+ effects spanning
+                        shader R&amp;D, ML-driven transformations, branded campaigns, and game mechanics —
+                        reaching audiences from hundreds of thousands to multi-millions per effect.
                     </div>
                 </div>
             </div>
@@ -53,11 +54,11 @@ const TikTokAREffects = () => {
                     <div className='work-section-title'>Production Model</div>
                     <p>
                         Each production cycle (~monthly cadence) assembled a fresh pod: product manager,
-                        2D/3D artists, QA, and one technical artist (me). I owned every line of effect logic
-                        and shader code, working tightly with the artists on look-dev and the PM on creator
-                        and platform constraints. Most effects shipped end-to-end through Effect House's
-                        internal AR runtime; a subset routed through server-side ML inference for
-                        image-to-image transformations.
+                        2D/3D artists, QA, and one technical artist — me, for the effects on my pods. I
+                        owned every line of effect logic and shader code on those effects, working tightly
+                        with the artists on look-dev and the PM on creator and platform constraints. Most
+                        effects shipped end-to-end through Effect House's internal AR runtime; a subset
+                        routed through server-side ML inference for image-to-image transformations.
                     </p>
                 </div>
 

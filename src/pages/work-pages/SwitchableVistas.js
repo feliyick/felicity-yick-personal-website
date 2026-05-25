@@ -56,18 +56,34 @@ const SwitchableVistas = () => {
                 <div className='work-section'>
                     <div className='work-section-title'>Pipeline</div>
                     <p>
-                        I designed and built a Python-based asset ingestion pipeline from Unreal Engine into
-                        Meta's proprietary rendering engine, exporting content as USD with support for LODs,
-                        multi-material setups, texture atlases, and baked lightmaps.
+                        I held the baton on the Switchable Vistas asset ingestion pipeline — work the team
+                        had begun before I joined the effort, which I carried forward by hardening it,
+                        productionising it, and growing its capability surface across LODs, multi-material
+                        setups, texture atlases, and baked lightmaps.
                     </p>
                     <p>
-                        I also developed the lightmap baking solution itself, tuned to meet the performance
-                        and quality constraints of standalone VR hardware.
+                        The tooling is a collection of Unreal Engine plugins authored in a mix of Unreal
+                        Blueprints and Python. It exposes artist-facing operations to bake, merge, and export
+                        lightmaps for Meta's internal rendering engine, and interfaces with custom C++ Unreal
+                        Engine source code (mostly authored by an external vendor, with some contributions of
+                        my own) where the public Unreal API fell short — extending native engine behaviour to
+                        fit our internal pipeline's needs.
                     </p>
                     <p>
-                        The pipeline was subsequently standardised and adopted as shared infrastructure across
-                        both the Immersive Homes product and the Events team (VR concert experiences), reducing
+                        As the main point of contact for the tool, I onboarded the internal artist team,
+                        fellow technical artists, and external vendors onto its use. The pipeline was
+                        subsequently standardised and adopted as shared infrastructure across both the
+                        Immersive Homes product and the Events team (VR concert experiences), reducing
                         duplicated effort across two product lines.
+                    </p>
+                </div>
+
+                <div className='work-section'>
+                    <div className='work-section-title'>Lightmap Baking</div>
+                    <p>
+                        Tuned the lightmap baking workflow to meet the performance and quality constraints of
+                        standalone VR hardware — balancing bake quality against atlas size, memory budget, and
+                        runtime sample cost for the Quest target.
                     </p>
                 </div>
 
