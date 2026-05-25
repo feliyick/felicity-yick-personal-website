@@ -1,0 +1,101 @@
+.work-sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 5em;
+    align-self: flex-start;
+}
+
+.work-sidebar-title {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--MUSTARD);
+    padding-left: 1em;
+    margin-bottom: 0.75em;
+}
+
+.work-sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.work-sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6em 1em;
+    border-left: 0.35em solid transparent;
+    cursor: cell;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    font-size: 14px;
+    color: var(--BLACK);
+}
+
+.work-sidebar-item:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.work-sidebar-item.is-active {
+    border-left-color: var(--MUSTARD);
+    font-weight: 600;
+}
+
+.work-sidebar-label {
+    flex: 1;
+}
+
+.work-sidebar-count {
+    font-size: 12px;
+    color: var(--DARKGREY);
+    margin-left: 0.5em;
+}
+
+.work-sidebar-item.is-active .work-sidebar-count {
+    color: var(--BLACK);
+}
+
+@media only screen and (max-width: 720px) {
+    .work-sidebar {
+        width: 100%;
+        position: static;
+        margin-bottom: 1.5em;
+    }
+
+    .work-sidebar-title {
+        padding-left: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .work-sidebar-list {
+        flex-direction: row;
+        gap: 0.5em;
+        overflow-x: auto;
+        padding-bottom: 0.5em;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .work-sidebar-item {
+        border-left: none;
+        border-bottom: 0.2em solid transparent;
+        padding: 0.4em 0.75em;
+        flex-shrink: 0;
+        background-color: rgba(0, 0, 0, 0.04);
+        border-radius: 999px;
+        white-space: nowrap;
+    }
+
+    .work-sidebar-item.is-active {
+        border-bottom-color: transparent;
+        background-color: var(--MUSTARD);
+    }
+
+    .work-sidebar-count {
+        margin-left: 0.5em;
+    }
+}

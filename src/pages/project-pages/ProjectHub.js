@@ -1,7 +1,6 @@
 import '../../styles/project-page-styles/ProjectHub.scss'
 import GraphicsProjects from "../GraphicsProjects"
 import ArtProjects from "../ArtProjects"
-import TechProjects from "../TechProjects"
 import Navbar from '../../components/Navbar'
 import PageEnd from '../PageEnd'
 
@@ -28,19 +27,6 @@ const ProjectHub = () => {
             
             <div><GraphicsProjects start={0}/></div>
 
-            <div className='tech-title'>
-                <div className='tech-header'>
-                <Slide>
-                    <div className='tech-featured'>FULLSTACK</div>
-                </Slide>
-                </div>
-                <Fade direction={"up"}>
-                    <p>Tech Projects</p>
-                </Fade>
-            </div>
-            <div id="tech-projects"><TechProjects start={0} end={2}/></div>
-
-            
             <div className='arts-title'>
                 <div className='arts-header'>
                 <Slide>

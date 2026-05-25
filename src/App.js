@@ -18,6 +18,12 @@ import ShaderFun from './pages/project-pages/ShaderFun';
 import Treble from './pages/project-pages/Treble'
 import ProceduralTerrariums from './pages/project-pages/ProceduralTerrariums';
 import ProceduralMinka from './pages/project-pages/ProceduralMinka';
+import SwitchableVistas from './pages/work-pages/SwitchableVistas';
+import HyperscapePrototyping from './pages/work-pages/HyperscapePrototyping';
+import APKLifecycleTool from './pages/work-pages/APKLifecycleTool';
+import AIGameCreationPlatform from './pages/work-pages/AIGameCreationPlatform';
+import MetaHub from './pages/work-pages/MetaHub';
+import TikTokHub from './pages/work-pages/TikTokHub';
 
 import React, { useEffect, useState } from 'react'
 import Lottie from 'react-lottie'
@@ -91,6 +97,12 @@ function App() {
 						<Route exact path="/project/treble" element={<Treble />} />
 						<Route exact path="/project/procedural-terrariums" element={<ProceduralTerrariums />} />
 						<Route exact path="/project/minka-generator" element={<ProceduralMinka />} />
+						<Route exact path="/work/meta" element={<MetaHub />} />
+						<Route exact path="/work/tiktok" element={<TikTokHub />} />
+						<Route exact path="/work/switchable-vistas" element={<SwitchableVistas />} />
+						<Route exact path="/work/hyperscape-prototyping" element={<HyperscapePrototyping />} />
+						<Route exact path="/work/apk-lifecycle-tool" element={<APKLifecycleTool />} />
+						<Route exact path="/work/ai-game-creation-platform" element={<AIGameCreationPlatform />} />
 					</Routes>
 				</Router>
 			)}

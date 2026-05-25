@@ -1,0 +1,60 @@
+.WorkGrid {
+    max-width: 1500px;
+    margin: auto;
+    padding: 4em 2em 6em;
+}
+
+.work-grid-header {
+    margin-bottom: 2em;
+}
+
+.work-grid-eyebrow {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--MUSTARD);
+    letter-spacing: 0.08em;
+}
+
+.work-grid-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--BLACK);
+    margin: 0.2em 0 0;
+}
+
+.work-grid-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+.work-grid {
+    flex: 1 1 0;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25em;
+    grid-auto-flow: dense;
+}
+
+@media only screen and (min-width: 720px) {
+    .work-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .WorkGrid {
+        padding: 3em 1em 4em;
+    }
+
+    .work-grid-layout {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .work-grid-title {
+        font-size: 32px;
+    }
+}

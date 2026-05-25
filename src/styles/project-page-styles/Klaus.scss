@@ -43,10 +43,7 @@
 }
 
 .klaus-background {
-    background-image: url('../../images/dotted-wave.png');
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .klaus-video {
     position:relative;
@@ -122,7 +119,7 @@ a.klaus-wiki {
     .intro-row {
         display: flex;
         flex-direction: row;
-        max-width: 800px;
+        max-width: 1100px;
         margin: auto;
         column-gap: 0.3em
     ;

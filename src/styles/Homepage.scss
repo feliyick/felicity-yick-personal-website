@@ -164,6 +164,49 @@ justify-self: center;
 
 }
 
+.bio-tagline {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--BLACK);
+    margin-bottom: 1.5em;
+}
+
+.bio-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 16px;
+    color: var(--BLACK);
+}
+
+.bio-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    line-height: 1.5;
+}
+
+.bio-emoji {
+    flex-shrink: 0;
+    font-size: 18px;
+}
+
+.bio-link {
+    text-decoration: none;
+    color: var(--BLACK);
+    font-weight: 600;
+    border-bottom: var(--MUSTARD) 0.125em solid;
+}
+
+.bio-link:hover {
+    background-color: var(--MUSTARD);
+    cursor: cell;
+}
+
 a.hyperlink, a.hyperlink:link, a.hyperlink:visited{
     text-decoration: none;
     color: var(--BLACK);
@@ -212,13 +255,45 @@ a.hyperlink:hover {
     z-index: 1;
 }
 
+// WORK
+
+
+.work-featured {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--MUSTARD);
+    max-width: 1500px;
+}
+
+.work-header {
+    display: flex;
+    flex-direction: row;
+    max-width: 1500px;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.work-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--BLACK);
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: auto;
+}
+
+
 // GRAPHICS PROJECTS
 
 
 .graphics-header {
     display: flex;
     flex-direction: row;
-    max-width: 800px;
+    max-width: 1500px;
     justify-content: space-between;
 
 }
@@ -232,7 +307,7 @@ a.hyperlink:hover {
     padding-right: 1em;
     display:flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -258,13 +333,13 @@ a.hyperlink:hover {
     font-size: 16px;
     font-weight: bold;
     color: var(--MUSTARD);
-    max-width: 800px;
+    max-width: 1500px;
 }
 
 .tech-header {
     display: flex;
     flex-direction: row;
-    max-width: 800px;
+    max-width: 1500px;
     justify-content: space-between;
     margin-top: 2em;
 }
@@ -277,7 +352,7 @@ a.hyperlink:hover {
     padding-right: 1em;
     display:flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -306,13 +381,13 @@ a.hyperlink:hover {
     font-size: 16px;
     font-weight: bold;
     color: var(--MUSTARD);
-    max-width: 800px;
+    max-width: 1500px;
 }
 
 .arts-header {
     display: flex;
     flex-direction: row;
-    max-width: 800px;
+    max-width: 1500px;
     justify-content: space-between;
     margin-top: 2em;
 
@@ -326,7 +401,7 @@ a.hyperlink:hover {
     padding-right: 1em;
     display:flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -367,9 +442,9 @@ a.resume-button:hover {
       flex-direction: row;
       margin: auto;
       height: 80%;
-      max-width: 900px;
-      padding-left: 32px;
-      padding-right: 32px;
+      max-width: 1500px;
+      padding-left: 48px;
+      padding-right: 48px;
     }
 
     .hero {

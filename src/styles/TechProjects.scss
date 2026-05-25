@@ -10,9 +10,6 @@
     padding: 2em;
     position: relative;
     margin: auto;
-    background-image: url('../images/squiggle-image.png');
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 
@@ -23,7 +20,7 @@
     justify-content: left;
     margin: auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 1500px;
 }
 @media only screen and (min-width: 800px) {
     .tech-project-cards {

@@ -59,10 +59,7 @@ a.git-link {
 }
 
 .minecraft-background {
-    background-image: url('../../images/dotted-wave.png');
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .minecraft-video {
     position: relative;
@@ -175,7 +172,7 @@ a.git-link {
     .intro-row {
         display: flex;
         flex-direction: row;
-        max-width: 800px;
+        max-width: 1100px;
         margin: auto;
         column-gap: 0.3em
     }

@@ -1,0 +1,130 @@
+.work-tile {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: cell;
+    background-color: var(--WHITE);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.2s ease;
+}
+
+.work-tile:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+}
+
+.work-tile-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Default state: thin title strip at the bottom */
+.work-tile-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 0.55em 1em;
+    transition: opacity 0.25s ease, transform 0.3s ease;
+}
+
+.work-tile-caption-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--BLACK);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Hover state: compact detail panel slides up from the bottom over the image */
+.work-tile-details {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 0.85em 1.1em 0.95em;
+    display: block;
+    text-align: left;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.25s ease;
+}
+
+.work-tile:hover .work-tile-caption {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.work-tile:hover .work-tile-details {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.work-tile-scope {
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--MUSTARD);
+    margin: 0 0 0.25em 0;
+    display: block;
+    text-align: left;
+}
+
+.work-tile-details-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--BLACK);
+    line-height: 1.25;
+    margin: 0 0 0.55em 0;
+    text-align: left;
+    display: block;
+}
+
+.work-tile-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3em;
+    margin: 0 0 0.5em 0;
+}
+
+.work-tile-tool {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--BLACK);
+    font-size: 10px;
+    font-style: italic;
+    padding: 0.2em 0.55em;
+    border-radius: 999px;
+    line-height: 1.4;
+}
+
+.work-tile-blurb {
+    font-size: 12px;
+    color: var(--BLACK);
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+@media only screen and (max-width: 720px) {
+    .work-tile {
+        aspect-ratio: 5 / 4;
+    }
+
+    /* No hover on touch devices — keep the compact caption */
+    .work-tile-details {
+        display: none;
+    }
+}

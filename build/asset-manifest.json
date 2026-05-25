@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.b4c5959c.css",
-    "main.js": "/static/js/main.cd8d5ded.js",
+    "main.css": "/static/css/main.2b898593.css",
+    "main.js": "/static/js/main.d5b4fa0c.js",
     "static/media/SeniorDesignDocument_FelicityYick.pdf": "/static/media/SeniorDesignDocument_FelicityYick.024c3cd054c028ca46b6.pdf",
+    "static/media/vistas-interior.png": "/static/media/vistas-interior.21dd49eb538949e8d7ff.png",
+    "static/media/vistas-pocket-content.png": "/static/media/vistas-pocket-content.1079002f1d2fa7a464dd.png",
+    "static/media/vistas-far-field.png": "/static/media/vistas-far-field.80ba9e4fa9ba59b3339d.png",
     "static/media/Minecraft-Ice.gif": "/static/media/Minecraft-Ice.2e28663a36867268b3e6.gif",
     "static/media/LSystemGif.gif": "/static/media/LSystemGif.3f4ac85a5e7019b71601.gif",
     "static/media/Minecraft-Grass.gif": "/static/media/Minecraft-Grass.71389857ff3ffd47d662.gif",
@@ -13,13 +16,11 @@
     "static/media/MinkaRender1.png": "/static/media/MinkaRender1.6d87f5f13bdcad690f99.png",
     "static/media/tin-tin-logo.png": "/static/media/tin-tin-logo.80bae63e42ad4b4ce085.png",
     "static/media/procedural-terrariums.png": "/static/media/procedural-terrariums.596bb64b14ba54506554.png",
-    "static/media/treble.png": "/static/media/treble.361fcf4696feeb416c1d.png",
     "static/media/shader-fun-worley.png": "/static/media/shader-fun-worley.f3a691a566e11d205ed5.png",
     "static/media/MinkaCourtyard.png": "/static/media/MinkaCourtyard.2cc0a57eceba11ab47ab.png",
     "static/media/shader-fun-gaussian.png": "/static/media/shader-fun-gaussian.d9c5b60eec9ca4ddb0ea.png",
     "static/media/MinkaTwoStory.png": "/static/media/MinkaTwoStory.fadebdc7136316b1d170.png",
     "static/media/MiniMayaCube.gif": "/static/media/MiniMayaCube.9afd9c8157ea698a33ff.gif",
-    "static/media/friendly.png": "/static/media/friendly.c073ef024064e2f952f9.png",
     "static/media/shader-fun-edgy.png": "/static/media/shader-fun-edgy.29fb0435791309a35c5c.png",
     "static/media/shader-fun-bloom.png": "/static/media/shader-fun-bloom.090360b078f5c57db447.png",
     "static/media/shader-fun-blinn-square.png": "/static/media/shader-fun-blinn-square.ecc826dd3769c2bd3220.png",
@@ -27,28 +28,25 @@
     "static/media/shader-fun-lambert.png": "/static/media/shader-fun-lambert.0a9219949408350feede.png",
     "static/media/Klaus-03.jpg": "/static/media/Klaus-03.da256ac8b19dad99a5a5.jpg",
     "static/media/profile-image.jpg": "/static/media/profile-image.d200d9dd40bc26459cab.jpg",
-    "static/media/FelicityYickResume2024.pdf": "/static/media/FelicityYickResume2024.733704932526481d495d.pdf",
     "static/media/shader-fun-greyscale.png": "/static/media/shader-fun-greyscale.4247433ed252d67a1a8f.png",
     "static/media/shader-fun-gradient.png": "/static/media/shader-fun-gradient.0c1a40517391d4c2e147.png",
     "static/media/Klaus-02.jpg": "/static/media/Klaus-02.137ca525d30185e1d5c6.jpg",
     "static/media/Klaus-04.jpg": "/static/media/Klaus-04.87be94e05dee683fac56.jpg",
     "static/media/Klaus-01.jpg": "/static/media/Klaus-01.b8fe04604ab8a98b3086.jpg",
+    "static/media/Felicity - Design Engineer Resume.pdf": "/static/media/Felicity - Design Engineer Resume.fbc356346410e69c99c8.pdf",
     "static/media/minecraft_textures_all.png": "/static/media/minecraft_textures_all.66c97ba4e68d2e8beb4f.png",
     "static/media/github-circle.png": "/static/media/github-circle.1c95b85d86a7c25b6f3c.png",
     "static/media/MinkaParams.png": "/static/media/MinkaParams.3ceba57db1223306a38c.png",
     "static/media/shader-fun-blinn.png": "/static/media/shader-fun-blinn.feaff2e5d72d3a7c7519.png",
     "static/media/TinyTavern02.jpg": "/static/media/TinyTavern02.2cc1db32238b089d213c.jpg",
-    "static/media/squiggle-image.png": "/static/media/squiggle-image.a7e4c96d7cf1697d00bd.png",
     "static/media/TinyTavern01.jpg": "/static/media/TinyTavern01.5987cdc2f5599fd07d75.jpg",
-    "static/media/black-wave.png": "/static/media/black-wave.0c385ada74ee6acd769f.png",
-    "static/media/lime-wave.png": "/static/media/lime-wave.764e9269ac2a7520a304.png",
-    "static/media/dotted-wave.png": "/static/media/dotted-wave.16f6e917dfdfc337f08d.png",
     "index.html": "/index.html",
-    "main.b4c5959c.css.map": "/static/css/main.b4c5959c.css.map",
-    "main.cd8d5ded.js.map": "/static/js/main.cd8d5ded.js.map"
+    "static/media/placeholder.svg": "/static/media/placeholder.1e05d5fc46ce832ea477c5260a5d9e9d.svg",
+    "main.2b898593.css.map": "/static/css/main.2b898593.css.map",
+    "main.d5b4fa0c.js.map": "/static/js/main.d5b4fa0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4c5959c.css",
-    "static/js/main.cd8d5ded.js"
+    "static/css/main.2b898593.css",
+    "static/js/main.d5b4fa0c.js"
   ]
 }

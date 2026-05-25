@@ -16,6 +16,7 @@ const Navbar = () => {
           felicity yick
         </a>
         <nav>
+          {/* Demo reel hidden until refreshed reel exists.
           <a
             href="#demoreel"
             class="nav-label"
@@ -23,12 +24,13 @@ const Navbar = () => {
           >
             demo reel.
           </a>
+          */}
           <a
-            href="#projectstop"
+            href="#work"
             class="nav-label"
-            onClick={(_) => navigate("/projects")}
+            onClick={(_) => navigate("/#work")}
           >
-            projects.
+            work.
           </a>
           <a
             href="#about"
