@@ -13,6 +13,56 @@
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
 }
 
+.work-tile.is-unlisted {
+    cursor: default;
+}
+
+.work-tile.is-unlisted:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.work-tile-lock-badge {
+    position: absolute;
+    top: 0.85em;
+    right: 0.85em;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--BLACK);
+    z-index: 2;
+}
+
+.work-tile-unlisted {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    color: var(--BLACK);
+}
+
+.work-tile-unlisted svg {
+    color: var(--MUSTARD);
+}
+
+.work-tile-unlisted-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.work-tile-unlisted-note {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--BLACK);
+}
+
 .work-tile-image {
     position: absolute;
     inset: 0;

@@ -2,7 +2,6 @@
 import VistasFarField from './images/work/meta/switchable-vistas/vistas-far-field.png'
 import HyperscapeHero from './images/hyperscape-hero.jpg'
 import MetaRealityLabsHero from './images/meta-reality-labs-hero.png'
-import Placeholder from './images/work/placeholder.svg'
 
 // TikTok hero images
 import TikTokHero from './images/TikTokEffects/tiktok-hero.png'
@@ -51,6 +50,8 @@ const selectedWork = [
         categories: [CAT.AI, CAT.PIPELINE],
         blurb: 'AI-native pod building a mobile game-creation platform around LLM agents — skills system, orchestration, in-game spatial editing, and A/B experimentation infrastructure.',
         page: '/work/ai-game-creation-platform',
+        unlisted: true,
+        unlistedNote: 'Unlisted — work in progress. Please request access for the full case study.',
     },
     {
         image: Minka,
@@ -60,16 +61,6 @@ const selectedWork = [
         categories: [CAT.PROCGEN],
         blurb: 'Houdini Digital Asset procedurally generating traditional Japanese houses; artist-tunable via a flexible parameter set.',
         page: '/project/minka-generator',
-    },
-    {
-        image: Placeholder,
-        logo: MetaLogo,
-        title: 'APK Lifecycle Tool',
-        scope: 'Meta Reality Labs',
-        tools: ['Python', 'GUI', 'Developer Tooling', 'VR'],
-        categories: [CAT.PIPELINE, CAT.REALTIME],
-        blurb: 'Unified GUI wrapping build, install, test, and publish for VR APKs — eliminated context-switching across the previously fragmented toolchain.',
-        page: '/work/apk-lifecycle-tool',
     },
     {
         image: TikTokHero,
@@ -100,6 +91,8 @@ const selectedWork = [
         categories: [CAT.PIPELINE, CAT.REALTIME, CAT.AI],
         blurb: 'Prototyped 3DGS capture pipeline from Unreal; partnered with Hyperscape engineering on splat optimisation for Quest; experimented with rigid-body and rig-bound splat animation.',
         page: '/work/hyperscape-prototyping',
+        unlisted: true,
+        unlistedNote: 'Unlisted — please request access for the full case study.',
     },
     {
         image: Klaus,
