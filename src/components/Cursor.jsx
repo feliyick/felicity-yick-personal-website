@@ -79,15 +79,23 @@ export default function Cursor() {
       else { trailOn = false; tg.clearRect(0, 0, trail.width, trail.height) }
     }
 
-    const onMove = (e) => {
-      mx = e.clientX; my = e.clientY
-      cur.classList.remove('away')
-      const labelled = e.target.closest?.('[data-cursor]')
-      const clickable = e.target.closest?.('a,button,summary,label,[data-hand]')
+    // hand + label state for whatever element is under the pointer
+    const update = (target) => {
+      const el = target && target.closest ? target : null
+      const labelled = el?.closest('[data-cursor]')
+      const clickable = el?.closest('a,button,summary,label,[data-hand]')
       const label = labelled ? labelled.dataset.cursor : ''
       cur.classList.toggle('is-hand', !!clickable || (labelled && labelled.hasAttribute('data-hand')))
       if (tag.textContent !== label) tag.textContent = label
       cur.classList.toggle('show-tag', !!label)
+    }
+    // re-check what's under a still pointer (page changed, scrolled, or content swapped)
+    const refresh = () => { if (mx >= 0) update(document.elementFromPoint(mx, my)) }
+
+    const onMove = (e) => {
+      mx = e.clientX; my = e.clientY
+      cur.classList.remove('away')
+      update(e.target)
       if (!reduce && Math.hypot(mx - lastX, my - lastY) > 14) {
         lastX = mx; lastY = my
         parts.push({
@@ -98,18 +106,25 @@ export default function Cursor() {
         if (!trailOn) { trailOn = true; requestAnimationFrame(drawTrail) }
       }
     }
+    let frame = 0
     const loop = () => {
       if (mx !== drawnX || my !== drawnY) { cur.style.transform = `translate3d(${mx}px,${my}px,0)`; drawnX = mx; drawnY = my }
+      if (++frame % 8 === 0) refresh()
       raf = requestAnimationFrame(loop)
     }
     const away = () => cur.classList.add('away')
     const back = () => cur.classList.remove('away')
-    const down = () => { cur.style.scale = '.85' }
-    const up = () => { cur.style.scale = '1' }
+    // keep position exact on press, and block native link/image dragging (it freezes pointer events)
+    const down = (e) => { mx = e.clientX; my = e.clientY }
+    const noDrag = (e) => { if (e.target.closest?.('a,img,video')) e.preventDefault() }
+    const afterNav = () => requestAnimationFrame(() => requestAnimationFrame(refresh))
 
     addEventListener('pointermove', onMove, { passive: true })
     addEventListener('pointerdown', down)
-    addEventListener('pointerup', up)
+    addEventListener('dragstart', noDrag)
+    addEventListener('click', afterNav)
+    addEventListener('popstate', afterNav)
+    addEventListener('scroll', refresh, { passive: true })
     addEventListener('resize', fit)
     root.addEventListener('mouseleave', away)
     root.addEventListener('mouseenter', back)
@@ -118,7 +133,10 @@ export default function Cursor() {
       cancelAnimationFrame(raf)
       removeEventListener('pointermove', onMove)
       removeEventListener('pointerdown', down)
-      removeEventListener('pointerup', up)
+      removeEventListener('dragstart', noDrag)
+      removeEventListener('click', afterNav)
+      removeEventListener('popstate', afterNav)
+      removeEventListener('scroll', refresh)
       removeEventListener('resize', fit)
       root.removeEventListener('mouseleave', away)
       root.removeEventListener('mouseenter', back)
