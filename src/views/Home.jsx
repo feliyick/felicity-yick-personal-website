@@ -24,7 +24,7 @@ const TOOLBOX = [
 export default function Home() {
   const location = useLocation()
 
-  useEffect(() => { document.title = 'Felicity Yick · Technical Artist' }, [])
+  useEffect(() => { document.title = 'Felicity Yick | Pipeline Technical Artist' }, [])
 
   // Scroll to #work / #about on every navigation (including re-clicking the same link).
   useEffect(() => {

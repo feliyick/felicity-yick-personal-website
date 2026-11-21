@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import PixelStar from '../components/PixelStar'
 
 export default function NotFound() {
-  useEffect(() => { document.title = 'Not found · Felicity Yick' }, [])
+  useEffect(() => { document.title = 'Not found | Felicity Yick' }, [])
   return (
     <main id="main" className="notfound">
       <div className="wrap">

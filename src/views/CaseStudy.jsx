@@ -11,7 +11,7 @@ export default function CaseStudy({ study }) {
   const idx = listed.findIndex((w) => w.path === study.path)
   const next = listed[(idx + 1) % listed.length]
 
-  useEffect(() => { document.title = `${study.title} · Felicity Yick` }, [study])
+  useEffect(() => { document.title = `${study.title} | Felicity Yick` }, [study])
 
   // highlight the section currently in view in the side table of contents
   useEffect(() => {
