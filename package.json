@@ -1,55 +1,22 @@
 {
   "name": "portfolio-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.1",
-    "@testing-library/user-event": "^14.6.1",
-    "framer-motion": "^12.40.0",
-    "lottie": "^0.0.1",
-    "lottie-web": "^5.13.0",
-    "react": "^18.3.1",
-    "react-awesome-reveal": "^4.3.1",
-    "react-dom": "^18.3.1",
-    "react-lottie": "^1.2.10",
-    "react-router-dom": "^6.30.3",
-    "react-scripts": "^5.0.1",
-    "react-scroll-motion": "^0.3.5",
-    "sass": "^1.97.2",
-    "web": "^0.0.2",
-    "web-vitals": "^4.2.4",
-    "webpack": "^5.104.1",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.2.3"
-  },
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.30.3",
+    "three": "0.170.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "ajv": "^8.17.1"
+    "@vitejs/plugin-react": "4.3.4",
+    "vite": "5.4.11"
   }
 }
