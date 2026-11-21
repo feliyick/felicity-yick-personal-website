@@ -71,7 +71,11 @@ h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-he
 .name-star i:nth-of-type(3) { right: -.06em; bottom: -.14em; animation-delay: 1.2s; background: var(--ink); }
 @keyframes twinkle { 50% { transform: translateY(-.03em); } }
 @keyframes blink { 50% { opacity: 0; } }
-.tagline { font: 600 clamp(18px, 1.7vw, 23px)/1.3 var(--body); margin: 0 0 16px; }
+.tagline { font: 600 clamp(18px, 1.7vw, 23px)/1.3 var(--body); margin: 0 0 16px; min-height: 1.3em; }
+.tagline .role { white-space: nowrap; }
+.tagline .caret { display: inline-block; width: .5em; height: 1em; margin-left: 3px; vertical-align: -.12em; background: var(--coral); animation: caret 1s steps(1) infinite; }
+@keyframes caret { 50% { opacity: 0; } }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .bio { list-style: none; padding: 0; margin: 0 0 26px; display: grid; gap: 8px; font-size: 17px; }
 .bio li { display: grid; grid-template-columns: 20px minmax(0, 1fr); gap: 12px; align-items: start; }
 .bio .picon { margin-top: .32em; }

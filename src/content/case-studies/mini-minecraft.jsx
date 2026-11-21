@@ -23,7 +23,6 @@ export default {
   links: [{ label: 'GitHub', href: 'https://github.com/feliyick/Mini-Minecraft' }],
   hero: MinecraftDesertPoster,
   heroVideo: MinecraftDesert,
-  heroVideo: undefined,
   sections: [
     {
       id: 'overview',
