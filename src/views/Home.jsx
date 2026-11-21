@@ -44,7 +44,7 @@ export default function Home() {
               Felicity
               <span className="name-star" aria-hidden="true"><PixelStar /><i /><i /><i /></span>
             </h1>
-            <p className="tagline">Pipeline Technical Artist and AI Native Developer</p>
+            <p className="tagline">Pipeline Technical Artist · AI Creative Developer</p>
             <ul className="bio">
               <li><PixelIcon name="cube" /><span>Creation Pipelines at <a href="https://about.meta.com/realitylabs/" target="_blank" rel="noreferrer">Meta Reality Labs</a> (Contract)</span></li>
               <li><PixelIcon name="book" /><span>BSE in Computer Graphics at <b>UPenn</b></span></li>
