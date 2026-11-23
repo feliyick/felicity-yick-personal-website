@@ -53,7 +53,7 @@ export default function CaseStudy({ study }) {
         )}
         {study.links?.length > 0 && (
           <div className="cs-links">
-            {study.links.map((l) => <a key={l.href} className="btn" href={l.href} target="_blank" rel="noreferrer">{l.label} ↗</a>)}
+            {study.links.map((l) => <a key={l.href} className="btn primary" href={l.href} target="_blank" rel="noreferrer">{l.label} ↗</a>)}
           </div>
         )}
         {(study.heroVideo || hero) && (
