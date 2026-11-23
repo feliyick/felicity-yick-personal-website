@@ -1,4 +1,4 @@
-import resume from './pdfs/Felicity - Design Engineer Resume.pdf'
+import resume from './pdfs/Felicity-Yick-Resume.pdf'
 
 export const RESUME_URL = resume
 export const EMAIL = 'felicityyick@gmail.com'

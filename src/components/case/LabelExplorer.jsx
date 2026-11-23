@@ -219,12 +219,18 @@ export default function LabelExplorer({ base = '/synth/' }) {
         </ul>
       </nav>
       </div>
-      <div className="lx-frames" role="group" aria-label="Frame">
+      <label className="lx-frames">
         <span className="lx-label">Frame</span>
-        {index.frames.map((f) => (
-          <button key={f.id} type="button" className="chip" aria-pressed={frameId === f.id} onClick={() => setFrameId(f.id)}>{frameName(f)}</button>
-        ))}
-      </div>
+        <select value={frameId || ''} onChange={(e) => setFrameId(e.target.value)}>
+          {[...new Set(index.frames.map((f) => f.camera))].map((cam) => (
+            <optgroup key={cam} label={CAMERA_NAMES[cam] || cam}>
+              {index.frames.filter((f) => f.camera === cam).map((f) => (
+                <option key={f.id} value={f.id}>{`${CAMERA_NAMES[f.camera] || f.camera} · Seed ${f.seed} · ${LOOK_NAMES[f.look] || f.look}`}</option>
+              ))}
+            </optgroup>
+          ))}
+        </select>
+      </label>
       <figcaption>
         {frame && <>{frameName(meta)}: {Object.keys(frame.objects).length} labelled objects ({counts.map(([k, v]) => `${v} ${k.replace('_', ' ')}`).join(', ')}).</>}
       </figcaption>
