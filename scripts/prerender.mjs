@@ -24,4 +24,10 @@ for (const r of routes()) {
   fs.writeFileSync(out, html)
   n++
 }
+// 404.html: Vercel serves it (status 404) for any unknown path; the app renders its NotFound route there too
+{
+  let html = template.replace('<div id="root"></div>', `<div id="root">${render('/404')}</div>`)
+  html = html.replace(/<title>[^<]*<\/title>/, '<title>Not found | Felicity Yick</title>')
+  fs.writeFileSync(path.join(root, '404.html'), html); n++
+}
 console.log(`prerendered ${n} routes`)

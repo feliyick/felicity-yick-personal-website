@@ -3,11 +3,12 @@
   "installCommand": "npm install",
   "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "rewrites": [
+  "cleanUrls": true,
+  "redirects": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/projects",
+      "destination": "/#work",
+      "permanent": false
     }
-  ],
-  "cleanUrls": true
+  ]
 }
