@@ -136,26 +136,27 @@ export default {
             <li>A scene file per seed with each house's door, stairs and porch boxes and the step sizes, in metres, for rebuilding the stoop in a physics simulator.</li>
           </ul>
           <p>
-            The first full run was 10 seeds, 3 cameras (a street view, a sidewalk view and one at robot height, about
-            1.2 m off the ground) and 2 lighting looks: 60 images and 2,220 labelled objects. It took about four hours on my
-            Mac's CPU, roughly 4 minutes a frame for both passes.
+            The full run was 10 seeds, 3 cameras (a street view, a sidewalk view and one at robot height, about 1.2 m off
+            the ground) and 2 lighting looks: 60 frames. An automatic check rejected 4 of them, where a backdrop building
+            sat right in front of the camera, leaving 56 images and 2,074 labelled objects. It took about three hours on my
+            Mac's CPU.
           </p>
           <table className="cs-table">
             <thead><tr><th>Class</th><th>Objects</th></tr></thead>
             <tbody>
-              <tr><td>Window</td><td>1,102</td></tr>
-              <tr><td>Bay</td><td>234</td></tr>
-              <tr><td>Wall</td><td>224</td></tr>
-              <tr><td>Door</td><td>150</td></tr>
-              <tr><td>Garage</td><td>148</td></tr>
-              <tr><td>Roof</td><td>126</td></tr>
-              <tr><td>Porch</td><td>98</td></tr>
-              <tr><td>Stairs</td><td>96</td></tr>
-              <tr><td>House number</td><td>42</td></tr>
+              <tr><td>Window</td><td>1,048</td></tr>
+              <tr><td>Bay</td><td>214</td></tr>
+              <tr><td>Wall</td><td>210</td></tr>
+              <tr><td>Garage</td><td>138</td></tr>
+              <tr><td>Door</td><td>134</td></tr>
+              <tr><td>Roof</td><td>122</td></tr>
+              <tr><td>Porch</td><td>96</td></tr>
+              <tr><td>Stairs</td><td>94</td></tr>
+              <tr><td>House number</td><td>18</td></tr>
             </tbody>
           </table>
           <p>
-            350 of those objects are linked to a parent, mostly windows inside bays. That's enough to test the pipeline, but
+            332 of those objects are linked to a parent, mostly windows inside bays. That's enough to test the pipeline, but
             far too small to train a real model on. That would take hundreds or thousands of frames from overnight runs.
           </p>
         </>
@@ -190,7 +191,7 @@ export default {
   "category_id": 3,                 // door
   "instance_id": 1300,              // house 0 (the hero), object 300
   "bbox": [58, 222, 74, 95],        // x, y, width, height in pixels
-  "area": 5163,                     // visible pixels
+  "area": 4935,                     // visible pixels
   "segmentation": { "size": [360, 640], "counts": [21193, 4, 303, ...] },
   "bbox_3d": [0.39, 0.18, -1.21, 2.57, 3.03, 0.06],   // world box, metres
   "parent_id": 0                    // not inside another object
@@ -213,7 +214,7 @@ export default {
           <ul>
             <li>Glass mixed up the IDs of windows and the rooms behind them, so the labels needed their own render with opaque materials.</li>
             <li>Karma saved the label layers in a separate part of the image file, which my first version didn't read.</li>
-            <li>My first label render still blended IDs where objects meet: 14% of pixels held a number that wasn't a real ID. Karma has a filter meant to stop this, but it had no effect in my setup. At first I patched the bad pixels afterwards, which hid the problem rather than fixing it. Now the label render takes exactly one sample per pixel, so each pixel comes from a single surface. The edges are jagged, but every label is exact. The tool still checks every pixel against the IDs that exist in the scene, and it now finds none wrong.</li>
+            <li>My first label render still blended IDs where objects meet: 14% of pixels held a number that wasn't a real ID. Karma has a filter meant to stop this, but it had no effect in my setup. At first I patched the bad pixels afterwards by snapping them to a valid neighbour, which hid the problem rather than fixing it. Comparing the two versions later showed the patch had invented about 300-pixel "house numbers" in dark gaps between houses. Now the label render takes exactly one sample per pixel, so each pixel comes from a single surface. The edges are jagged, but every label is exact, and across all 60 frames the check found 0 pixels to fix.</li>
             <li>The Houdini Apprentice watermark appears in every layer, so that corner is marked to be ignored.</li>
             <li>Depth of field blurred the edges, so it's switched off for the label render.</li>
             <li>Checking the first batch, I found two seeds where a backdrop building sits right in front of the wide camera. The labels were correct, but the images were useless. Depth caught it: a "distant" building shouldn't be 1 m from the camera. That check now runs after every batch, and frames that fail are left out of the dataset and listed in a QA report.</li>

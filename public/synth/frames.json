@@ -5,7 +5,7 @@
    "seed": 22,
    "look": "golden",
    "camera": "cam_wide",
-   "objects": 54,
+   "objects": 53,
    "layers": [
     "beauty",
     "class",
@@ -19,7 +19,7 @@
    "seed": 58,
    "look": "golden",
    "camera": "cam_wide",
-   "objects": 58,
+   "objects": 57,
    "layers": [
     "beauty",
     "class",
@@ -47,7 +47,7 @@
    "seed": 11,
    "look": "golden",
    "camera": "cam_street",
-   "objects": 48,
+   "objects": 47,
    "layers": [
     "beauty",
     "class",
@@ -61,7 +61,7 @@
    "seed": 77,
    "look": "golden",
    "camera": "cam_street",
-   "objects": 47,
+   "objects": 46,
    "layers": [
     "beauty",
     "class",
@@ -75,7 +75,7 @@
    "seed": 202,
    "look": "sunny",
    "camera": "cam_street",
-   "objects": 50,
+   "objects": 49,
    "layers": [
     "beauty",
     "class",
@@ -89,7 +89,7 @@
    "seed": 22,
    "look": "golden",
    "camera": "cam_robot",
-   "objects": 12,
+   "objects": 13,
    "layers": [
     "beauty",
     "class",
