@@ -1,6 +1,7 @@
 import switchableVistas from './switchable-vistas'
 import aiGameCreationPlatform from './ai-game-creation-platform'
 import minkaGenerator from './minka-generator'
+import sfVictorianStreet from './sf-victorian-street'
 import tiktokArEffects from './tiktok-ar-effects'
 import tiktokAiEffects from './tiktok-ai-effects'
 import hyperscapePrototyping from './hyperscape-prototyping'
@@ -17,6 +18,7 @@ import apkLifecycleTool from './apk-lifecycle-tool'
 export const caseStudies = [
   switchableVistas,
   aiGameCreationPlatform,
+  sfVictorianStreet,
   minkaGenerator,
   tiktokArEffects,
   tiktokAiEffects,

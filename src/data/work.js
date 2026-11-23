@@ -17,6 +17,7 @@ import MiniMayaCube from '../images/MiniMayaCube-poster.jpg'
 import MiniMayaCubeVideo from '../images/MiniMayaCube.mp4'
 import Minka from '../images/Minka/MinkaRender2.jpg'
 import Blinn from '../images/ShaderFun/shader-fun-blinn.png'
+import SFVictorian from '../images/SFVictorian/golden_cam_wide.jpg'
 
 export const CAT = {
   PIPELINE: 'Pipelines & Tooling',
@@ -44,6 +45,14 @@ const work = [
     categories: [CAT.AI, CAT.PIPELINE],
     blurb: 'AI-native pod building a mobile game-creation platform around LLM agents: skills system, orchestration, in-game spatial editing, and A/B experimentation infrastructure.',
     path: '/work/ai-game-creation-platform',
+  },
+  {
+    image: SFVictorian, feat: true,
+    title: 'Painted Ladies: a procedural SF street',
+    tools: ['Houdini', 'VEX', 'Solaris', 'Karma', 'MaterialX', 'Python', 'MCP'],
+    categories: [CAT.PROCGEN, CAT.SHADERS, CAT.AI],
+    blurb: 'A Houdini HDA that generates San Francisco Victorians from a seed, and a street system that lays them down a hill with sidewalks, trees and Muni wires. Half hand-built in Houdini, then iterated with an agent through my own Houdini MCP server.',
+    path: '/project/sf-victorian-street',
   },
   {
     image: Minka,

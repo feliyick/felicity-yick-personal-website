@@ -57,7 +57,7 @@ export default function CaseStudy({ study }) {
           </div>
         )}
         {(study.heroVideo || hero) && (
-          <figure className="cs-hero" style={{ marginInline: 0 }}>
+          <figure className={`cs-hero${study.heroUncropped ? ' uncropped' : ''}`} style={{ marginInline: 0 }}>
             {study.heroVideo
               ? <video src={study.heroVideo} poster={hero} autoPlay loop muted playsInline />
               : <img src={hero} alt="" />}

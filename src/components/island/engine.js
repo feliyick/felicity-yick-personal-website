@@ -184,37 +184,70 @@ export function createIsland({ canvas, globe, labelsEl, landmarks, onOpen, reduc
   const LM = {}
   function lm(id, x, y, z, anchorY) { const g = new THREE.Group(); g.position.set(x, y, z); g.userData.id = id; scene.add(g); LM[id] = { group: g, anchor: new THREE.Vector3(x, y + anchorY, z) }; return g }
 
-  // Minka: raised platform, plaster walls with wood frame, hip roof, windows that glow at night
-  const mk = lm('minka', -2.0, 1.78, 1.6, 3.3); mk.rotation.y = 0.35
-  mesh(new THREE.BoxGeometry(2.9, 0.25, 2.3), M(C.wood), 0, 0.2, 0, mk)
-  ;[[-1.3, -1], [1.3, -1], [-1.3, 1], [1.3, 1]].forEach(([x, z]) => mesh(new THREE.BoxGeometry(.18, .3, .18), M(C.wood), x, 0, z, mk))
-  mesh(new THREE.BoxGeometry(2.4, 1.0, 1.8), M(C.plaster), 0, 0.82, 0, mk)
-  ;[[-1.2, .9], [1.2, .9], [-1.2, -.9], [1.2, -.9]].forEach(([x, z]) => mesh(new THREE.BoxGeometry(.12, 1.05, .12), M(C.wood), x, .84, z, mk))
-  mesh(new THREE.BoxGeometry(.5, .55, .05), M('#ffe7a8', { em: '#ffb347' }), -0.5, 0.8, 0.91, mk)
-  mesh(new THREE.BoxGeometry(.5, .55, .05), M('#ffe7a8', { em: '#ffb347' }), 0.5, 0.8, 0.91, mk)
-  mesh(new THREE.BoxGeometry(.05, .5, .5), M('#ffe7a8', { em: '#ffb347' }), 1.21, 0.8, 0, mk)
-  const roof = mesh(new THREE.ConeGeometry(2.25, 1.35, 4, 1), M(C.thatch), 0, 1.98, 0, mk); roof.rotation.y = Math.PI / 4; roof.scale.set(1.25, 1, 1)
-  mesh(new THREE.BoxGeometry(1.4, .16, .2), M(C.ink), 0, 2.62, 0, mk)
-  mesh(new THREE.BoxGeometry(1.1, .12, .5), M(C.rock), 0, 0.1, 1.45, mk)
+  // Painted Ladies (SF Victorian street generator): two houses on a sloping street, uphill house higher on its brick
+  // plinth, each with a bay column, cream trim + cornice, a stoop, and windows that glow at night
+  const pl = lm('victorian', -2.0, 1.78, 1.6, 3.6); pl.rotation.y = 0.35
+  const TRIM = '#fff8ec', GLASS = ['#ffe7a8', { em: '#ffb347' }]
+  const slope = new THREE.BoxGeometry(2.7, 0.08, 0.7); const walk = mesh(slope, M('#d9d3c7'), 0, 0.28, 1.05, pl); walk.rotation.z = -0.17   // sidewalk
+  ;[
+    { x: -0.62, plinth: 0.5, body: '#9fc2ea', h: 2.05, gable: true, bay: 0.24 },
+    { x: 0.62, plinth: 0.08, body: '#f2a0c0', h: 2.0, gable: false, bay: 0.24 },
+  ].forEach((L) => {
+    const w = 1.12, d = 1.4, y0 = L.plinth, fz = d / 2
+    mesh(new THREE.BoxGeometry(w, y0 + 0.02, d), M('#c47a62'), L.x, (y0 + 0.02) / 2, 0, pl)                  // brick plinth
+    mesh(new THREE.BoxGeometry(w, L.h, d), M(L.body), L.x, y0 + L.h / 2, 0, pl)                              // body
+    mesh(new THREE.BoxGeometry(w + 0.16, 0.16, d + 0.14), M(TRIM), L.x, y0 + L.h + 0.08, 0, pl)               // cornice
+    mesh(new THREE.BoxGeometry(w + 0.06, 0.07, 0.08), M(TRIM), L.x, y0 + L.h * 0.42, fz + 0.03, pl)           // belt course
+    const bx = L.x + L.bay, by = y0 + L.h * 0.68, bh = L.h * 0.56                                            // bay column
+    mesh(new THREE.BoxGeometry(0.52, bh, 0.3), M(L.body), bx, by, fz + 0.15, pl)
+    mesh(new THREE.BoxGeometry(0.6, 0.08, 0.36), M(TRIM), bx, by - bh / 2, fz + 0.15, pl)
+    mesh(new THREE.BoxGeometry(0.6, 0.08, 0.36), M(TRIM), bx, by + bh / 2, fz + 0.15, pl)
+    mesh(new THREE.BoxGeometry(0.6, 0.06, 0.36), M(TRIM), bx, by, fz + 0.15, pl)
+    ;[-0.25, 0.25].forEach((dy) => mesh(new THREE.BoxGeometry(0.34, bh * 0.36, 0.03), M(...GLASS), bx, by + dy * bh, fz + 0.31, pl))
+    const wx = L.x - L.bay                                                                                  // flat windows + door
+    ;[0.57, 0.82].forEach((f) => mesh(new THREE.BoxGeometry(0.26, 0.36, 0.03), M(...GLASS), wx, y0 + L.h * f, fz + 0.02, pl))
+    mesh(new THREE.BoxGeometry(0.3, 0.52, 0.05), M('#7a3f34'), wx, y0 + 0.3, fz + 0.03, pl)
+    mesh(new THREE.BoxGeometry(0.4, 0.08, 0.1), M(TRIM), wx, y0 + 0.6, fz + 0.06, pl)                       // door hood
+    const steps = Math.max(2, Math.round(y0 / 0.12) + 1)                                                     // stoop down to the walk
+    for (let k = 0; k < steps; k++) mesh(new THREE.BoxGeometry(0.36, y0 / steps + 0.06, 0.16), M(TRIM), wx, (k + 0.5) * (y0 / steps) + 0.03, fz + 0.12 + (steps - 1 - k) * 0.15, pl)
+    if (L.gable) {                                                                                          // Queen Anne gable
+      const g = new THREE.CylinderGeometry(0.66, 0.66, d, 3, 1); g.rotateX(-Math.PI / 2)
+      const r = mesh(g, M('#5b4b7a'), L.x, y0 + L.h + 0.42, 0, pl); r.scale.set(0.98, 0.78, 1)
+      mesh(new THREE.BoxGeometry(0.2, 0.2, 0.03), M(...GLASS), L.x, y0 + L.h + 0.36, fz + 0.02, pl)
+    } else {                                                                                                // Italianate brackets
+      for (let k = -1; k <= 1; k++) mesh(new THREE.BoxGeometry(0.08, 0.16, 0.1), M(TRIM), L.x + k * 0.42, y0 + L.h - 0.06, fz + 0.07, pl)
+    }
+  })
 
-  // Orange tree: small recursive branching (an L-system nod); foliage sways, oranges at the tips
-  const tr = lm('tree', 2.4, 1.78, 1.7, 4.1)
-  ;(function branch(pos, dir, len, rad, depth) {
-    const end = pos.clone().add(dir.clone().multiplyScalar(len))
-    const geo = new THREE.CylinderGeometry(rad * 0.7, rad, len, 5, 1); geo.translate(0, len / 2, 0)
-    const b = new THREE.Mesh(flat(geo), M(C.bark, { sway: 0.015 })); b.position.copy(pos); b.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir); tr.add(b)
-    if (depth === 0) {
-      const f = mesh(new THREE.IcosahedronGeometry(sr(.55, .75), 0), M(srand() < .5 ? C.leaf : C.leaf2, { sway: 0.06 }), end.x, end.y, end.z, tr); f.rotation.set(sr(0, 3), sr(0, 3), 0)
-      if (srand() < .8) mesh(new THREE.IcosahedronGeometry(.15, 0), M(C.orange, { sway: 0.06 }), end.x + sr(-.4, .4), end.y - sr(.1, .4), end.z + sr(.2, .5), tr)
-      return
+  // Voxel world (Mini Minecraft): one chunk split into the project's four biomes, 2x2 blocks each - crimson desert with
+  // a cactus, lime slime with a purple island, dark grassland with a glowing lava block and a cyan-leaved tree, lilac
+  // snowy peaks. Checkered shades keep every block readable through the pixel filter.
+  const vx = lm('voxel', 2.75, 1.78, 1.3, 2.2); vx.rotation.y = -0.6
+  const V = 0.55, N = 4
+  const cube = (x, y, z, col, o, sc = 1) => {
+    const m = mesh(new THREE.BoxGeometry(V * sc, V * sc, V * sc), M(col, o), (x - (N - 1) / 2) * V, V * sc / 2 + y * V, (z - (N - 1) / 2) * V, vx)
+    return m
+  }
+  const BIOME = {
+    desert: { h: [[1, 1], [1, 2]], c: ['#c9466c', '#a8385a'] },
+    slime: { h: [[1, 1], [1, 2]], c: ['#a6e35c', '#8fd14a'] },
+    grass: { h: [[1, 1], [1, 1]], c: ['#5d4ca0', '#47397f'] },
+    ice: { h: [[2, 2], [2, 3]], c: ['#a9a9f0', '#8f8fe0'] },
+  }
+  const quad = (i, j) => (i < 2 ? (j < 2 ? 'desert' : 'slime') : (j < 2 ? 'grass' : 'ice'))
+  for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) {
+    const B = BIOME[quad(i, j)], h = B.h[i % 2][j % 2]
+    for (let k = 0; k < h; k++) {
+      let col = B.c[(i + j + k) % 2]
+      if (quad(i, j) === 'ice' && k === h - 1 && h >= 3) col = '#f6f4ff'                                 // snow cap
+      if (quad(i, j) === 'slime' && h === 2) col = k ? '#6fbf4a' : '#4a3f7a'                            // purple island, green top
+      cube(j, k, i, col)
     }
-    const n = depth > 1 ? 3 : 2
-    for (let i = 0; i < n; i++) {
-      const a = (i / n) * Math.PI * 2 + sr(0, 1)
-      const nd = dir.clone().applyAxisAngle(new THREE.Vector3(Math.cos(a), 0, Math.sin(a)), sr(.45, .75)).normalize()
-      branch(end, nd, len * 0.72, rad * 0.62, depth - 1)
-    }
-  })(new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, 1, 0), 1.3, 0.2, 3)
+  }
+  cube(0, 1, 0, '#6fc24a', 0, 0.45); cube(0, 1.45, 0, '#82d45a', 0, 0.45)                               // cactus
+  cube(1, 1, 3, '#ff6a2a', { em: '#ff5a1f' }, 0.96)                                                     // lava, set into the ground
+  cube(0, 1, 2, '#d4588a', 0, 0.4); cube(0, 1.4, 2, '#6fe0dc', { sway: 0.03 }, 0.85)                   // tree: pink trunk, cyan leaves
+  cube(0, 2.15, 2, '#8ff0ec', { sway: 0.03 }, 0.55)
 
   // Terrarium: glass dome over a dish of succulents
   const te = lm('terrarium', 0.9, 1.78, -2.4, 2.3)
@@ -276,10 +309,10 @@ export function createIsland({ canvas, globe, labelsEl, landmarks, onOpen, reduc
   mesh(new THREE.SphereGeometry(.24, 7, 5, 0, Math.PI * 2, 0, Math.PI * 0.6), M(C.ink), 0, 0.82, -0.02, me)
   mesh(new THREE.IcosahedronGeometry(.12, 0), M(C.ink), 0, 1.03, -0.12, me)
   const arm = mesh(new THREE.BoxGeometry(.08, .32, .08), M(C.coral), .24, .42, 0, me); arm.geometry.translate(0, -.14, 0)
-  const curve = new THREE.CatmullRomCurve3([[0.2, 3.6], [-0.3, -0.4], [2.4, -0.6], [2.7, 3.6], [0.2, 4.6]].map(([x, z]) => new THREE.Vector3(x, 1.78, z)), true)
+  const curve = new THREE.CatmullRomCurve3([[0.2, 3.6], [-0.3, -0.4], [1.3, -0.9], [1.2, 3.4], [0.2, 4.6]].map(([x, z]) => new THREE.Vector3(x, 1.78, z)), true)
 
   /* --- set dressing --- */
-  ;[[4.4, 2.6], [-4.6, 1.4], [-0.6, -4.8], [3.4, -4.2], [-4.8, -0.8], [4.9, 0.8], [-1.2, 4.6]].forEach(([x, z], i) => {
+  ;[[4.9, 3.3], [-4.6, 1.4], [-0.6, -4.8], [3.4, -4.2], [-4.8, -0.8], [4.9, 0.8], [-1.2, 4.6]].forEach(([x, z], i) => {
     const g = new THREE.Group(); g.position.set(x, 1.78, z); scene.add(g)
     if (i % 2 === 0) {
       mesh(new THREE.CylinderGeometry(.08, .1, .5, 5), M(C.bark), 0, .25, 0, g)
@@ -288,7 +321,7 @@ export function createIsland({ canvas, globe, labelsEl, landmarks, onOpen, reduc
   })
   for (let i = 0; i < 46; i++) {
     const a = sr(0, Math.PI * 2), r = sr(1.2, 5.3); const x = Math.cos(a) * r, z = Math.sin(a) * r
-    if (Math.hypot(x + 3.1, z + 2.4) < 2.4 || Math.hypot(x + 2, z - 1.6) < 1.9 || Math.hypot(x - .9, z + 2.4) < 1.4 || Math.hypot(x - 4.6, z + 1.4) < 1.1) continue
+    if (Math.hypot(x + 3.1, z + 2.4) < 2.4 || Math.hypot(x + 2, z - 1.6) < 1.9 || Math.hypot(x - .9, z + 2.4) < 1.4 || Math.hypot(x - 4.6, z + 1.4) < 1.1 || Math.hypot(x - 2.75, z - 1.3) < 1.8) continue
     if (i % 3 === 0) mesh(new THREE.IcosahedronGeometry(.07, 0), M([C.pink, C.sun, '#ffffff', '#b48cff'][i % 4]), x, 1.92, z)
     else mesh(new THREE.ConeGeometry(.09, .3, 3), M(C.grass2, { sway: .12 }), x, 1.93, z)
   }

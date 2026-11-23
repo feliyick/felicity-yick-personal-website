@@ -1,8 +1,9 @@
 // Building blocks used inside case-study section bodies (src/content/case-studies/*.jsx).
+import { useState } from 'react'
 
-export function Media({ src, video, poster, alt = '', caption }) {
+export function Media({ src, video, poster, alt = '', caption, maxWidth }) {
   return (
-    <figure className="media-block" style={{ margin: '22px 0' }}>
+    <figure className="media-block" style={{ margin: '22px 0', maxWidth }}>
       {video ? (
         <video src={video} poster={poster} autoPlay loop muted playsInline preload="metadata" aria-label={alt || caption} />
       ) : (
@@ -50,4 +51,41 @@ export function Embed({ src, title = 'Embedded video' }) {
 
 export function Callout({ children }) {
   return <div className="callout">{children}</div>
+}
+
+// Same shot, several versions (lighting looks, clay vs beauty...): chip tabs over stacked images that crossfade.
+export function Switcher({ items = [], caption, label = 'Version', maxWidth }) {
+  const [on, setOn] = useState(0)
+  return (
+    <figure className="media-block switcher">
+      <div className="switch-tabs" role="group" aria-label={label}>
+        {items.map((it, i) => (
+          <button key={it.label} type="button" className="chip" aria-pressed={on === i} onClick={() => setOn(i)}>{it.label}</button>
+        ))}
+      </div>
+      <div className="switch-stack" style={maxWidth ? { maxWidth } : undefined}>
+        {items.map((it, i) => (
+          <img key={it.label} src={it.src} alt={it.alt || it.label} className={on === i ? 'on' : ''} aria-hidden={on !== i} decoding="async" />
+        ))}
+      </div>
+      {caption && <figcaption>{caption}</figcaption>}
+    </figure>
+  )
+}
+
+// Marks media that hasn't been made yet. Only visible in `npm run dev`; renders nothing in the built site.
+export function Placeholder({ children }) {
+  if (!import.meta.env.DEV) return null
+  return <div className="placeholder">Coming: {children}</div>
+}
+
+// Colour key: swatch -> label (for colour-coded diagrams and blockouts).
+export function Legend({ items = [] }) {
+  return (
+    <ul className="legend">
+      {items.map((it) => (
+        <li key={it.label}><span className="swatch" style={{ background: it.color }} aria-hidden="true" />{it.label}</li>
+      ))}
+    </ul>
+  )
 }
