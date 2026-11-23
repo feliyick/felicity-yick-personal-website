@@ -7,7 +7,7 @@ export default function CaseStudy({ study }) {
   const [activeSec, setActiveSec] = useState(study.sections[0]?.id)
   const gridItem = work.find((w) => w.path === study.path)
   const hero = study.hero || gridItem?.image
-  const listed = work.filter((w) => !w.locked)
+  const listed = work.filter((w) => !w.locked && !w.hidden)
   const idx = listed.findIndex((w) => w.path === study.path)
   const next = listed[(idx + 1) % listed.length]
 

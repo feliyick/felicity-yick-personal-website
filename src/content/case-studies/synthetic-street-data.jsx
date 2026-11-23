@@ -103,8 +103,8 @@ export default {
           <p>
             These attributes carry over into Solaris, where Karma renders them as extra image layers alongside the normal
             render. Each frame is rendered twice: once normally, and once with every material made opaque for the labels,
-            because transparent glass would mix a window's ID with the room behind it. The label render also outputs depth
-            and normals.
+            because transparent glass would mix a window's ID with the room behind it. The label render uses one sample per
+            pixel, so no pixel is ever an average of two objects. It also outputs depth and normals.
           </p>
           <p>
             All of this runs through one tool in my MCP, <code>synth_render</code>. For each seed and camera, it renders both
@@ -213,10 +213,10 @@ export default {
           <ul>
             <li>Glass mixed up the IDs of windows and the rooms behind them, so the labels needed their own render with opaque materials.</li>
             <li>Karma saved the label layers in a separate part of the image file, which my first version didn't read.</li>
-            <li>The edges between objects came out as a blend of two IDs. Since the scene knows every ID that exists, the tool checks each pixel against that list and fixes the ones that don't match.</li>
+            <li>My first label render still blended IDs where objects meet: 14% of pixels held a number that wasn't a real ID. Karma has a filter meant to stop this, but it had no effect in my setup. At first I patched the bad pixels afterwards, which hid the problem rather than fixing it. Now the label render takes exactly one sample per pixel, so each pixel comes from a single surface. The edges are jagged, but every label is exact. The tool still checks every pixel against the IDs that exist in the scene, and it now finds none wrong.</li>
             <li>The Houdini Apprentice watermark appears in every layer, so that corner is marked to be ignored.</li>
             <li>Depth of field blurred the edges, so it's switched off for the label render.</li>
-            <li>Checking the first batch, I found two seeds where a backdrop building sits right in front of the wide camera. The labels were correct, but the images were useless. Depth caught it: a "distant" building shouldn't be 1 m from the camera. I left those frames out of the sample here, and the fix is to keep the backdrop behind the camera.</li>
+            <li>Checking the first batch, I found two seeds where a backdrop building sits right in front of the wide camera. The labels were correct, but the images were useless. Depth caught it: a "distant" building shouldn't be 1 m from the camera. That check now runs after every batch, and frames that fail are left out of the dataset and listed in a QA report.</li>
           </ul>
         </>
       ),

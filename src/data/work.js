@@ -6,7 +6,6 @@ import TikTokHero from '../images/TikTokEffects/tiktok-hero.png'
 import TikTokCreateWithAIHero from '../images/TikTokEffects/effecthouse-create-with-ai.jpg'
 import MetaLogo from '../images/logos/meta.svg'
 import TikTokLogo from '../images/logos/tiktok.svg'
-import Klaus from '../images/Klaus/Klaus-03.jpg'
 import TinyTavern from '../images/TinyTavern/TinyTavern01.jpg'
 import ProceduralTerrariumRender from '../images/Terrarium/procedural-terrariums.png'
 import MinecraftSlime from '../images/MiniMinecraft/Minecraft-Slime-poster.jpg'
@@ -65,7 +64,7 @@ const work = [
   },
   {
     image: Minka,
-    title: 'Japanese Minka Generator',
+    title: 'Japanese Minka Generator', hidden: true,
     tools: ['Houdini', 'VEX'],
     categories: [CAT.PROCGEN],
     blurb: 'Houdini Digital Asset procedurally generating traditional Japanese houses; artist-tunable via a flexible parameter set.',
@@ -96,14 +95,6 @@ const work = [
     path: '/work/hyperscape-prototyping',
   },
   {
-    image: Klaus,
-    title: 'Klaus',
-    tools: ['ZBrush', 'Autodesk Maya', 'Arnold'],
-    categories: [CAT.ART],
-    blurb: 'Sculpt of the title character from Netflix Original Klaus. Sculpted and textured in ZBrush, rendered in Arnold and Maya.',
-    path: '/project/klaus',
-  },
-  {
     image: ProceduralTerrariumRender,
     title: 'Procedural Terrariums',
     tools: ['Houdini', 'Substance Designer'],
@@ -113,11 +104,11 @@ const work = [
   },
   {
     image: TinyTavern,
-    title: 'Tiny Tavern',
+    title: 'Tiny Tavern & Klaus',
     tools: ['Autodesk Maya', 'ZBrush', 'Substance Painter', 'Arnold'],
     categories: [CAT.ART],
-    blurb: 'Original tavern diorama. All assets modelled in Maya and ZBrush, textured in Substance Painter, rendered in Arnold.',
-    path: '/project/tiny-tavern',
+    blurb: 'An original tavern diorama, modelled in Maya and ZBrush and textured in Substance Painter, plus a ZBrush sculpt of Klaus. Both rendered in Arnold.',
+    path: '/project/3d-art',
   },
   {
     image: MinecraftSlime, video: MinecraftSlimeVideo,
@@ -145,7 +136,7 @@ const work = [
   },
   {
     image: Blinn,
-    title: 'Shader Fun',
+    title: 'Shader Fun', hidden: true,
     tools: ['GLSL', 'C++'],
     categories: [CAT.SHADERS],
     blurb: 'A collection of shader implementations: Blinn-Phong, Matcap, Gaussian Blur, Worley Noise, and more.',
