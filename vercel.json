@@ -9,6 +9,16 @@
       "source": "/projects",
       "destination": "/#work",
       "permanent": false
+    },
+    {
+      "source": "/project/klaus",
+      "destination": "/project/3d-art",
+      "permanent": true
+    },
+    {
+      "source": "/project/tiny-tavern",
+      "destination": "/project/3d-art",
+      "permanent": true
     }
   ]
 }

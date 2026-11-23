@@ -28,7 +28,8 @@ export default function WorkGrid() {
   const [active, setActive] = useState('All')
   const [locked, setLocked] = useState(null)
   const close = useCallback(() => setLocked(null), [])
-  const list = active === 'All' ? work : work.filter((w) => w.categories.includes(active))
+  const shown = work.filter((w) => !w.hidden)                          // hidden: page still exists, not listed
+  const list = active === 'All' ? shown : shown.filter((w) => w.categories.includes(active))
 
   return (
     <>

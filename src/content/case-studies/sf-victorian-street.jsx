@@ -329,7 +329,7 @@ export default {
       body: (
         <>
           <ul>
-            <li><strong>Synthetic data:</strong> every window, door and bay is already labelled, so the generator can produce annotated training images.</li>
+            <li><strong>Synthetic data:</strong> I turned the street into a labelled dataset generator. See <a href="/project/synthetic-street-data">Synthetic street data</a>.</li>
             <li><strong>Gaussian splats and simulation:</strong> capture the street as a splat scene, then drop a robot into it.</li>
           </ul>
           <p>
