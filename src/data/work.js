@@ -37,6 +37,7 @@ const work = [
     categories: [CAT.PIPELINE, CAT.REALTIME, CAT.SHADERS],
     blurb: "Productionised the team's Unreal→USD ingestion pipeline (Blueprints + Python, custom C++ source extensions): LODs, atlases, tuned lightmap baking for standalone VR. Shipped in Quest OS v81 for Connect 2025.",
     path: '/work/switchable-vistas',
+    seo: 'Meta Quest home environments for Connect 2025. I productionised the Unreal-to-USD pipeline: LODs, atlases and lightmap baking. Shipped in Quest OS v81.',
   },
   {
     image: MetaRealityLabsHero, logo: MetaLogo, company: 'Meta', locked: true, wip: true,
@@ -45,6 +46,7 @@ const work = [
     categories: [CAT.AI, CAT.PIPELINE],
     blurb: 'AI-native pod building a mobile game-creation platform around LLM agents: skills system, orchestration, in-game spatial editing, and A/B experimentation infrastructure.',
     path: '/work/ai-game-creation-platform',
+    seo: 'An AI-native team at Meta building a mobile game-creation platform around LLM agents: skills, orchestration, in-game spatial editing and A/B tests.',
   },
   {
     image: SFVictorian, feat: true,
@@ -53,6 +55,7 @@ const work = [
     categories: [CAT.PROCGEN, CAT.SHADERS, CAT.AI],
     blurb: 'A Houdini HDA that generates San Francisco Victorians from a seed, and a street system that lays them down a hill with sidewalks, trees and Muni wires. Half hand-built in Houdini, then iterated with an agent through my own Houdini MCP server.',
     path: '/project/sf-victorian-street',
+    seo: 'A Houdini HDA that grows San Francisco Victorians from a seed, plus a street down a hill. Half hand-built, then iterated with my own Houdini MCP.',
   },
   {
     image: SynthCard,
@@ -61,6 +64,7 @@ const work = [
     categories: [CAT.AI, CAT.PIPELINE, CAT.PROCGEN],
     blurb: 'The Painted Ladies street as a synthetic dataset generator: per-pixel class and instance labels, boxes, depth and camera data for every render, generated through my Houdini MCP.',
     path: '/project/synthetic-street-data',
+    seo: 'My procedural SF street as a synthetic dataset: per-pixel labels, boxes, depth and camera data for every render, made with my Houdini MCP.',
   },
   {
     image: Minka,
@@ -77,6 +81,7 @@ const work = [
     categories: [CAT.REALTIME, CAT.SHADERS, CAT.AI],
     blurb: 'Embedded technical artist on rotating production pods. Owned 50+ AR effects end-to-end across shader R&D, GAN transformations, server-rendered ML, and branded campaigns (DreamWorks, Met Gala 2024). 10M+ users reached.',
     path: '/work/tiktok-ar-effects',
+    seo: '50+ TikTok AR effects owned end to end: shader R&D, GAN transformations, server-side ML and campaigns like DreamWorks and the Met Gala 2024.',
   },
   {
     image: TikTokCreateWithAIHero, logo: TikTokLogo, logoH: 24, company: 'TikTok',
@@ -85,6 +90,7 @@ const work = [
     categories: [CAT.AI, CAT.PIPELINE],
     blurb: 'Core engineer on Effect House\'s "Create with AI" platform feature: a modular TypeScript framework auto-generating visual-scripting logic. Supported 10K+ AI-generated effects on launch.',
     path: '/work/tiktok-ai-effects',
+    seo: "Core engineer on Effect House's Create with AI: a TypeScript framework that turns a prompt into visual-scripting logic. 10K+ effects at launch.",
   },
   {
     image: HyperscapeHero, logo: MetaLogo, company: 'Meta', locked: true,
@@ -93,6 +99,7 @@ const work = [
     categories: [CAT.PIPELINE, CAT.REALTIME, CAT.AI],
     blurb: 'Prototyped a 3DGS capture pipeline from Unreal; partnered with Hyperscape engineering on splat optimisation for Quest; experimented with rigid-body and rig-bound splat animation.',
     path: '/work/hyperscape-prototyping',
+    seo: "Prototyping a Gaussian splat capture pipeline from Unreal with Meta's Hyperscape team: splat optimisation for Quest and animated splats.",
   },
   {
     image: ProceduralTerrariumRender,
