@@ -46,7 +46,7 @@ import BlockoutSeedsPoster from '../../images/SFVictorian/blockout_seeds-poster.
 import ParamDemoPoster from '../../images/SFVictorian/param_demo-poster.jpg'
 import RowSweepPoster from '../../images/SFVictorian/sweep_row_count-poster.jpg'
 
-// TODO(Felicity): confirm both repo URLs once the GitHub repos exist.
+// Repos
 const REPO = 'https://github.com/feliyick/sf-victorian-procedural'
 const MCP_REPO = 'https://github.com/feliyick/houdini-mcp'
 
@@ -60,8 +60,14 @@ export default {
   slug: 'sf-victorian-street',
   path: '/project/sf-victorian-street',
   title: 'Painted Ladies: a procedural San Francisco street',
-  summary:
-    "I love living in San Francisco, and walking around admiring the beautiful houses is a constant source of inspiration. In an effort to brush up on my procedural modelling skills, but also to build agentic pipelines that actually work for me, I built a procedural generator for the city's painted Victorians, along with my own Houdini MCP to help me iterate.",
+  summary: (
+    <>
+      I love living in San Francisco, and walking around admiring the beautiful houses is a constant source of inspiration.
+      In an effort to brush up on my procedural modelling skills, but also to build agentic pipelines that actually work for
+      me, I built a procedural generator for the city's painted Victorians, along with{' '}
+      <a href={MCP_REPO} target="_blank" rel="noreferrer">my own Houdini MCP</a> to help me iterate.
+    </>
+  ),
   meta: {
     where: 'Personal project',
     role: 'Built the HDA and the Houdini MCP. AI-assisted iteration.',
@@ -69,8 +75,8 @@ export default {
     tools: ['Houdini', 'VEX', 'Solaris', 'Karma', 'MaterialX', 'Python', 'MCP'],
   },
   links: [
-    // { label: 'Watch the breakdown', href: '' },   // add once the screen recording exists
-    { label: 'View the code', href: REPO },
+    { label: 'View the Houdini HDA', href: REPO },
+    { label: 'View the Houdini MCP', href: MCP_REPO },
   ],
   hero: GoldenWide,
   heroUncropped: true,   // keep the Houdini Apprentice mark (bottom-right) in frame
