@@ -1,0 +1,200 @@
+{
+ "frames": [
+  {
+   "id": "cam_wide_golden_22",
+   "seed": 22,
+   "look": "golden",
+   "camera": "cam_wide",
+   "objects": 54,
+   "layers": [
+    "beauty",
+    "class",
+    "instance",
+    "depth",
+    "normal"
+   ]
+  },
+  {
+   "id": "cam_wide_golden_58",
+   "seed": 58,
+   "look": "golden",
+   "camera": "cam_wide",
+   "objects": 58,
+   "layers": [
+    "beauty",
+    "class",
+    "instance",
+    "depth",
+    "normal"
+   ]
+  },
+  {
+   "id": "cam_wide_sunny_42",
+   "seed": 42,
+   "look": "sunny",
+   "camera": "cam_wide",
+   "objects": 60,
+   "layers": [
+    "beauty",
+    "class",
+    "instance",
+    "depth",
+    "normal"
+   ]
+  },
+  {
+   "id": "cam_street_golden_11",
+   "seed": 11,
+   "look": "golden",
+   "camera": "cam_street",
+   "objects": 48,
+   "layers": [
+    "beauty",
+    "class",
+    "instance",
+    "depth",
+    "normal"
+   ]
+  },
+  {
+   "id": "cam_street_golden_77",
+   "seed": 77,
+   "look": "golden",
+   "camera": "cam_street",
+   "objects": 47,
+   "layers": [
+    "beauty",
+    "class",
+    "instance",
+    "depth",
+    "normal"
+   ]
+  },
+  {
+   "id": "cam_street_sunny_202",
+   "seed": 202,
+   "look": "sunny",
+   "camera": "cam_street",
+   "objects": 50,
+   "layers": [
+    "beauty",
+    "class",
+    "instance",
+    "depth",
+    "normal"
+   ]
+  },
+  {
+   "id": "cam_robot_golden_22",
+   "seed": 22,
+   "look": "golden",
+   "camera": "cam_robot",
+   "objects": 12,
+   "layers": [
+    "beauty",
+    "class",
+    "instance",
+    "depth",
+    "normal"
+   ]
+  },
+  {
+   "id": "cam_robot_golden_3",
+   "seed": 3,
+   "look": "golden",
+   "camera": "cam_robot",
+   "objects": 10,
+   "layers": [
+    "beauty",
+    "class",
+    "instance",
+    "depth",
+    "normal"
+   ]
+  },
+  {
+   "id": "cam_robot_sunny_58",
+   "seed": 58,
+   "look": "sunny",
+   "camera": "cam_robot",
+   "objects": 14,
+   "layers": [
+    "beauty",
+    "class",
+    "instance",
+    "depth",
+    "normal"
+   ]
+  }
+ ],
+ "classes": {
+  "0": {
+   "name": "background",
+   "color": "#000000"
+  },
+  "1": {
+   "name": "wall",
+   "color": "#808080"
+  },
+  "2": {
+   "name": "window",
+   "color": "#00c8e6"
+  },
+  "3": {
+   "name": "door",
+   "color": "#00c864"
+  },
+  "4": {
+   "name": "garage",
+   "color": "#e6dc00"
+  },
+  "5": {
+   "name": "bay",
+   "color": "#ff0080"
+  },
+  "6": {
+   "name": "stairs",
+   "color": "#ff9600"
+  },
+  "7": {
+   "name": "porch",
+   "color": "#965ae6"
+  },
+  "8": {
+   "name": "roof",
+   "color": "#8c5028"
+  },
+  "9": {
+   "name": "ornament",
+   "color": "#ffffff"
+  },
+  "10": {
+   "name": "house_number",
+   "color": "#e61e1e"
+  },
+  "11": {
+   "name": "road",
+   "color": "#32323c"
+  },
+  "12": {
+   "name": "sidewalk",
+   "color": "#bebeb4"
+  },
+  "13": {
+   "name": "vegetation",
+   "color": "#288c28"
+  },
+  "14": {
+   "name": "street_furniture",
+   "color": "#3c5adc"
+  },
+  "15": {
+   "name": "distant_building",
+   "color": "#c8aa82"
+  },
+  "255": {
+   "name": "ignore",
+   "color": "#ff00ff"
+  }
+ }
+}

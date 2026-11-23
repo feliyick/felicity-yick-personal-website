@@ -2,6 +2,7 @@ import switchableVistas from './switchable-vistas'
 import aiGameCreationPlatform from './ai-game-creation-platform'
 import minkaGenerator from './minka-generator'
 import sfVictorianStreet from './sf-victorian-street'
+import syntheticStreetData from './synthetic-street-data'
 import tiktokArEffects from './tiktok-ar-effects'
 import tiktokAiEffects from './tiktok-ai-effects'
 import hyperscapePrototyping from './hyperscape-prototyping'
@@ -19,6 +20,7 @@ export const caseStudies = [
   switchableVistas,
   aiGameCreationPlatform,
   sfVictorianStreet,
+  syntheticStreetData,
   minkaGenerator,
   tiktokArEffects,
   tiktokAiEffects,

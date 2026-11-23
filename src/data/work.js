@@ -18,6 +18,7 @@ import MiniMayaCubeVideo from '../images/MiniMayaCube.mp4'
 import Minka from '../images/Minka/MinkaRender2.jpg'
 import Blinn from '../images/ShaderFun/shader-fun-blinn.png'
 import SFVictorian from '../images/SFVictorian/golden_cam_wide.jpg'
+import SynthCard from '../images/SynthData/card.jpg'
 
 export const CAT = {
   PIPELINE: 'Pipelines & Tooling',
@@ -53,6 +54,14 @@ const work = [
     categories: [CAT.PROCGEN, CAT.SHADERS, CAT.AI],
     blurb: 'A Houdini HDA that generates San Francisco Victorians from a seed, and a street system that lays them down a hill with sidewalks, trees and Muni wires. Half hand-built in Houdini, then iterated with an agent through my own Houdini MCP server.',
     path: '/project/sf-victorian-street',
+  },
+  {
+    image: SynthCard,
+    title: 'Synthetic street data',
+    tools: ['Houdini', 'USD', 'Karma AOVs', 'Python', 'MCP', 'COCO'],
+    categories: [CAT.AI, CAT.PIPELINE, CAT.PROCGEN],
+    blurb: 'The Painted Ladies street as a synthetic dataset generator: per-pixel class and instance labels, boxes, depth and camera data for every render, generated through my Houdini MCP.',
+    path: '/project/synthetic-street-data',
   },
   {
     image: Minka,
