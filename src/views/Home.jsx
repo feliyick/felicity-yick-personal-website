@@ -1,4 +1,4 @@
-import { useEffect, lazy, Suspense } from 'react'
+import { useEffect, useState, lazy, Suspense } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import WorkGrid from '../components/WorkGrid'
 import PixelStar from '../components/PixelStar'
@@ -26,6 +26,11 @@ const TOOLBOX = [
 
 export default function Home() {
   const location = useLocation()
+  // The island is browser-only (WebGL, lazy-loaded): the pre-rendered page and the first client render show the
+  // placeholder, then it swaps in once mounted, so hydration matches.
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
+  const globeFallback = <div className="globe-wrap"><div className="globe"><div className="globe-fallback"><PixelStar size={44} /></div></div></div>
 
   useEffect(() => { document.title = 'Felicity Yick | Pipeline Technical Artist' }, [])
 
@@ -58,9 +63,11 @@ export default function Home() {
               <Link className="btn" to="/#about">About me</Link>
             </div>
           </div>
-          <Suspense fallback={<div className="globe-wrap"><div className="globe"><div className="globe-fallback"><PixelStar size={44} /></div></div></div>}>
-            <Island />
-          </Suspense>
+          {mounted ? (
+            <Suspense fallback={globeFallback}>
+              <Island />
+            </Suspense>
+          ) : globeFallback}
         </div>
         <Link className="scroll-cue" to="/#work" data-cursor="scroll">
           <span>selected work</span>
