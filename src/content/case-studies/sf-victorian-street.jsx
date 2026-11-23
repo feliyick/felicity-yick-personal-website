@@ -61,7 +61,7 @@ export default {
   path: '/project/sf-victorian-street',
   title: 'Painted Ladies: a procedural San Francisco street',
   summary:
-    "It's been a while since I last did procedural modelling in Houdini. Most of my recent work has been on AI for games, and I missed building scenes and making pretty renders. So I picked something I see every day in San Francisco, the painted Victorians, relearned what I'd gotten rusty on, and built my own Houdini MCP to help me along the way.",
+    "I love living in San Francisco, and walking around admiring the beautiful houses is a constant source of inspiration. In an effort to brush up on my procedural modelling skills, but also to build agentic pipelines that actually work for me, I built a procedural generator for the city's painted Victorians, along with my own Houdini MCP to help me iterate.",
   meta: {
     where: 'Personal project',
     role: 'Built the HDA and the Houdini MCP. AI-assisted iteration.',
