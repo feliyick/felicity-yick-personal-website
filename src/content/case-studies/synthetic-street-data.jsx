@@ -206,21 +206,5 @@ export default {
         </>
       ),
     },
-    {
-      id: 'problems',
-      title: 'Problems I ran into',
-      body: (
-        <>
-          <ul>
-            <li>Glass mixed up the IDs of windows and the rooms behind them, so the labels needed their own render with opaque materials.</li>
-            <li>Karma saved the label layers in a separate part of the image file, which my first version didn't read.</li>
-            <li>My first label render still blended IDs where objects meet: 14% of pixels held a number that wasn't a real ID. Karma has a filter meant to stop this, but it had no effect in my setup. At first I patched the bad pixels afterwards by snapping them to a valid neighbour, which hid the problem rather than fixing it. Comparing the two versions later showed the patch had invented about 300-pixel "house numbers" in dark gaps between houses. Now the label render takes exactly one sample per pixel, so each pixel comes from a single surface. The edges are jagged, but every label is exact, and across all 64 frames rendered the check found 0 pixels to fix.</li>
-            <li>The Houdini Apprentice watermark appears in every layer, so that corner is marked to be ignored.</li>
-            <li>Depth of field blurred the edges, so it's switched off for the label render.</li>
-            <li>Checking the first batch, I found two seeds where a backdrop building sits right in front of the wide camera. The labels were correct, but the images were useless. Depth caught it: a "distant" building shouldn't be 1 m from the camera. That check now runs after every batch, and frames that fail are left out of the dataset and listed in a QA report. The cause was the street getting narrower on some seeds, which put the houses across the street on top of the camera, so I fixed that and rendered those frames again.</li>
-          </ul>
-        </>
-      ),
-    },
   ],
 }
