@@ -311,14 +311,18 @@ export default {
       body: (
         <>
           <p>
-            I built it to learn how MCP works, and to speed up iterating on this scene. There are two parts: a small listener that runs inside my open Houdini session, and a server the agent connects to. Through it the agent can read the network, set parameters, cook and check for errors, take viewport captures and render a Karma preview it can look at, and I can watch every change happen in the viewport.
+            I built it to learn how MCP works, and to speed up iterating on this scene. There are two parts: a small listener that runs inside Houdini, and a server the agent connects to. Through it the agent can read the network, set parameters, edit HDAs, cook and check for errors, take viewport captures and render a Karma preview it can look at, and I can watch every change happen in the viewport.
           </p>
           <p>
-            I added the guardrails I wanted for my own scene: every edit is backed up first and is a single undo step, every edit has a dry run, the agent can only write to the parts of the scene I allow, and its undo won't touch anything I changed by hand. The first live test actually found a bug in my scene: two Python LOPs were adding a step to Houdini's undo history every time they cooked.
+            I added the guardrails I wanted for my own scene: every edit is backed up first and is a single undo step, every edit has a dry run, the agent can only write to the parts of the scene and the folders I allow, and its undo won't touch anything I changed by hand. The first live test actually found a bug in my scene: two Python LOPs were adding a step to Houdini's undo history every time they cooked.
           </p>
           <p>
-            It works on any scene, not just this one:{' '}
-            <a href={MCP_REPO} target="_blank" rel="noreferrer">houdini-mcp</a>. I used it for the later detail passes and for the captures on this page, and the synthetic data work is next.
+            Later I added a headless mode, so the same tools run in hython with no Houdini window open. That's for batch jobs and render farms, or for exporting while my own session stays untouched. It can also export the scene as USD and write geometry caches. The USD export flattens the whole stage into one plain <code>.usd</code> file, so it opens outside Houdini, even from an Apprentice licence.
+          </p>
+          <p>
+            It works on any scene, not just this one, and installs with pip:{' '}
+            <a href={MCP_REPO} target="_blank" rel="noreferrer">houdini-mcp</a>. I used it for the later detail passes, the captures on this page and the{' '}
+            <a href="/project/synthetic-street-data">synthetic data</a> work.
           </p>
         </>
       ),
